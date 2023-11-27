@@ -1,0 +1,312 @@
+.community-blog {
+  width: 320px;
+  height: 568px;
+  background-color: #000000;
+  overflow: hidden;
+}
+
+.community-blog .overlap-group {
+  position: relative;
+  width: 324px;
+  height: 568px;
+}
+
+.community-blog .rectangle {
+  position: absolute;
+  width: 320px;
+  height: 568px;
+  top: 0;
+  left: 0;
+  mix-blend-mode: lighten;
+  object-fit: cover;
+}
+
+.community-blog .image {
+  width: 182px;
+  height: 166px;
+  top: 13px;
+  left: 69px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.community-blog .text-wrapper {
+  position: absolute;
+  width: 158px;
+  top: 304px;
+  left: 81px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.community-blog .img {
+  width: 34px;
+  height: 34px;
+  top: 8px;
+  left: 279px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.community-blog .div {
+  position: absolute;
+  width: 137px;
+  top: 171px;
+  left: 91px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.community-blog .image-2 {
+  width: 15px;
+  height: 14px;
+  top: 172px;
+  left: 228px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.community-blog .image-3 {
+  width: 201px;
+  height: 49px;
+  top: 181px;
+  left: 112px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.community-blog .text-wrapper-2 {
+  position: absolute;
+  width: 58px;
+  top: 195px;
+  left: 17px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.community-blog .text-wrapper-3 {
+  position: absolute;
+  width: 67px;
+  top: 229px;
+  left: 17px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.community-blog .text-wrapper-4 {
+  position: absolute;
+  width: 62px;
+  top: 250px;
+  left: 15px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.community-blog .text-wrapper-5 {
+  position: absolute;
+  width: 85px;
+  top: 274px;
+  left: 15px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 9px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.community-blog .text-wrapper-6 {
+  position: absolute;
+  width: 128px;
+  top: 337px;
+  left: 8px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 9px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.community-blog .image-4 {
+  width: 117px;
+  height: 48px;
+  top: 351px;
+  left: 4px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.community-blog .rectangle-2 {
+  position: absolute;
+  width: 300px;
+  height: 53px;
+  top: 507px;
+  left: 13px;
+}
+
+.community-blog .rectangle-3 {
+  position: absolute;
+  width: 48px;
+  height: 49px;
+  top: 511px;
+  left: 260px;
+  background-color: #ffffff;
+}
+
+.community-blog .rectangle-4 {
+  position: absolute;
+  width: 41px;
+  height: 40px;
+  top: 514px;
+  left: 265px;
+  object-fit: cover;
+}
+
+.community-blog .rectangle-5 {
+  position: absolute;
+  width: 52px;
+  height: 41px;
+  top: 515px;
+  left: 13px;
+  object-fit: cover;
+}
+
+.community-blog .chicago-the-windy {
+  position: absolute;
+  width: 193px;
+  top: 340px;
+  left: 127px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 8px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.community-blog .span {
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 8px;
+  letter-spacing: 0;
+}
+
+.community-blog .text-wrapper-7 {
+  font-weight: 700;
+}
+
+.community-blog .chicago-s-best {
+  position: absolute;
+  width: 135px;
+  top: 411px;
+  left: 1px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 9px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.community-blog .chicago-embraces {
+  position: absolute;
+  width: 193px;
+  top: 422px;
+  left: 131px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 8px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.community-blog .image-5 {
+  width: 8px;
+  height: 7px;
+  top: 392px;
+  left: 213px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.community-blog .image-6 {
+  width: 8px;
+  height: 7px;
+  top: 474px;
+  left: 263px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.community-blog .text-wrapper-8 {
+  position: absolute;
+  width: 133px;
+  top: 199px;
+  left: 151px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 11px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.community-blog .rectangle-6 {
+  position: absolute;
+  width: 121px;
+  height: 55px;
+  top: 430px;
+  left: 4px;
+  background-color: #d9d9d9;
+}
+
+.community-blog .image-7 {
+  width: 121px;
+  height: 55px;
+  top: 430px;
+  left: 4px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.community-blog .image-8 {
+  width: 91px;
+  height: 93px;
+  top: 196px;
+  left: 12px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.community-blog .rectangle-7 {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  top: 513px;
+  left: 140px;
+  mix-blend-mode: darken;
+  object-fit: cover;
+}
