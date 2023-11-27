@@ -1,0 +1,527 @@
+.transportation {
+  background-color: #0d1507;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.transportation .overlap-group-wrapper {
+  background-color: #0d1507;
+  width: 320px;
+  height: 568px;
+}
+
+.transportation .overlap-group {
+  position: relative;
+  height: 568px;
+}
+
+.transportation .rectangle {
+  position: absolute;
+  width: 304px;
+  height: 210px;
+  top: 9px;
+  left: 10px;
+  mix-blend-mode: saturation;
+  background: linear-gradient(180deg, rgb(18, 74, 154) 0%, rgb(56.05, 100.73, 224.19) 100%);
+}
+
+.transportation .img {
+  position: absolute;
+  width: 320px;
+  height: 568px;
+  top: 0;
+  left: 0;
+  mix-blend-mode: lighten;
+  object-fit: cover;
+}
+
+.transportation .title {
+  position: absolute;
+  width: 223px;
+  top: 20px;
+  left: 33px;
+  font-family: var(--title-1-font-family);
+  font-weight: var(--title-1-font-weight);
+  color: #ffffff;
+  font-size: var(--title-1-font-size);
+  text-align: center;
+  letter-spacing: var(--title-1-letter-spacing);
+  line-height: var(--title-1-line-height);
+  font-style: var(--title-1-font-style);
+}
+
+.transportation .boxes {
+  display: flex;
+  width: 124px;
+  height: 35px;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 10px;
+  top: 176px;
+  left: 25px;
+  border: 1px solid;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.transportation .vector {
+  position: relative;
+  width: 18px;
+  height: 20px;
+}
+
+.transportation .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.5px;
+  margin-right: -1px;
+  opacity: 0.4;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 300;
+  color: var(--gray-text);
+  font-size: 14px;
+  letter-spacing: -0.41px;
+  line-height: 22px;
+  white-space: nowrap;
+}
+
+.transportation .div {
+  display: flex;
+  width: 51px;
+  height: 35px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 6px 10px;
+  top: 176px;
+  left: 175px;
+  border: 1px solid;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.transportation .group {
+  position: relative;
+  width: 18px;
+  height: 20px;
+  margin-left: -2.5px;
+}
+
+.transportation .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.5px;
+  margin-right: -2.5px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 300;
+  color: var(--gray-text);
+  font-size: 14px;
+  letter-spacing: -0.41px;
+  line-height: 22px;
+  white-space: nowrap;
+}
+
+.transportation .rectangle-2 {
+  position: absolute;
+  width: 307px;
+  height: 40px;
+  top: 518px;
+  left: 8px;
+}
+
+.transportation .rectangle-3 {
+  position: absolute;
+  width: 30px;
+  height: 33px;
+  top: 522px;
+  left: 279px;
+  object-fit: cover;
+}
+
+.transportation .rectangle-4 {
+  position: absolute;
+  width: 52px;
+  height: 41px;
+  top: 517px;
+  left: 9px;
+  object-fit: cover;
+}
+
+.transportation .rectangle-5 {
+  position: absolute;
+  width: 229px;
+  height: 36px;
+  top: 468px;
+  left: 43px;
+  background-color: #f6feff;
+  filter: blur(4px);
+}
+
+.transportation .text-wrapper-3 {
+  position: absolute;
+  top: 474px;
+  left: 63px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: -0.41px;
+  line-height: 22px;
+  white-space: nowrap;
+}
+
+.transportation .group-2 {
+  position: absolute;
+  width: 49px;
+  height: 35px;
+  top: 176px;
+  left: 236px;
+  background-image: url(./img/rectangle-239.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.transportation .vector-wrapper {
+  width: 293px;
+  height: 76px;
+  top: 70px;
+  left: 15px;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.transportation .vector-2 {
+  position: absolute;
+  width: 265px;
+  height: 1px;
+  top: 38px;
+  left: 28px;
+}
+
+.transportation .compare-arrows {
+  position: absolute;
+  width: 21px;
+  height: 18px;
+  top: 114px;
+  left: 269px;
+}
+
+.transportation .rectangle-6 {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 70px;
+  left: 270px;
+  object-fit: cover;
+}
+
+.transportation .text-wrapper-4 {
+  position: absolute;
+  width: 95px;
+  height: 32px;
+  top: 75px;
+  left: 25px;
+  font-family: "Jaldi", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: -0.41px;
+  line-height: 22px;
+}
+
+.transportation .text-wrapper-5 {
+  position: absolute;
+  width: 80px;
+  height: 23px;
+  top: 116px;
+  left: 24px;
+  font-family: "Jaldi", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: -0.41px;
+  line-height: 22px;
+  white-space: nowrap;
+}
+
+.transportation .rectangle-7 {
+  position: absolute;
+  width: 309px;
+  height: 51px;
+  top: 220px;
+  left: 5px;
+  background-color: #ffefef;
+  border-radius: 12px;
+}
+
+.transportation .rectangle-8 {
+  position: absolute;
+  width: 309px;
+  height: 51px;
+  top: 279px;
+  left: 5px;
+  background-color: #ffefef;
+  border-radius: 12px;
+}
+
+.transportation .rectangle-9 {
+  position: absolute;
+  width: 309px;
+  height: 51px;
+  top: 340px;
+  left: 5px;
+  background-color: #ffefef;
+  border-radius: 12px;
+}
+
+.transportation .communauto-rent-a {
+  position: absolute;
+  width: 139px;
+  top: 353px;
+  left: 109px;
+  font-family: "Istok Web", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 11px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.transportation .rectangle-10 {
+  position: absolute;
+  width: 309px;
+  height: 51px;
+  top: 399px;
+  left: 5px;
+  background-color: #ffefef;
+  border-radius: 12px;
+}
+
+.transportation .rectangle-11 {
+  position: absolute;
+  width: 36px;
+  height: 31px;
+  top: 230px;
+  left: 73px;
+  object-fit: cover;
+}
+
+.transportation .rectangle-12 {
+  position: absolute;
+  width: 49px;
+  height: 43px;
+  top: 283px;
+  left: 14px;
+  object-fit: cover;
+}
+
+.transportation .rectangle-13 {
+  position: absolute;
+  width: 54px;
+  height: 39px;
+  top: 346px;
+  left: 10px;
+  object-fit: cover;
+}
+
+.transportation .rectangle-14 {
+  position: absolute;
+  width: 57px;
+  height: 38px;
+  top: 407px;
+  left: 10px;
+  object-fit: cover;
+}
+
+.transportation .rectangle-15 {
+  position: absolute;
+  width: 57px;
+  height: 33px;
+  top: 228px;
+  left: 10px;
+  object-fit: cover;
+}
+
+.transportation .rectangle-16 {
+  position: absolute;
+  width: 41px;
+  height: 30px;
+  top: 292px;
+  left: 66px;
+  object-fit: cover;
+}
+
+.transportation .rectangle-17 {
+  position: absolute;
+  width: 41px;
+  height: 30px;
+  top: 352px;
+  left: 67px;
+  object-fit: cover;
+}
+
+.transportation .rectangle-18 {
+  position: absolute;
+  width: 43px;
+  height: 26px;
+  top: 414px;
+  left: 66px;
+  mix-blend-mode: multiply;
+  object-fit: cover;
+}
+
+.transportation .bus-downtown-west {
+  position: absolute;
+  width: 197px;
+  top: 234px;
+  left: 82px;
+  font-family: "Istok Web", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 10px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.transportation .rectangle-19 {
+  position: absolute;
+  width: 44px;
+  height: 32px;
+  top: 289px;
+  left: 258px;
+  background-color: #9efa65;
+  border-radius: 12px;
+  mix-blend-mode: darken;
+}
+
+.transportation .rectangle-20 {
+  position: absolute;
+  width: 44px;
+  height: 32px;
+  top: 346px;
+  left: 258px;
+  background-color: #9efa65;
+  border-radius: 12px;
+  mix-blend-mode: darken;
+}
+
+.transportation .rectangle-21 {
+  position: absolute;
+  width: 44px;
+  height: 32px;
+  top: 409px;
+  left: 258px;
+  background-color: #9efa65;
+  border-radius: 12px;
+  mix-blend-mode: darken;
+}
+
+.transportation .rectangle-22 {
+  position: absolute;
+  width: 44px;
+  height: 32px;
+  top: 232px;
+  left: 258px;
+  background-color: #9efa65;
+  border-radius: 12px;
+  mix-blend-mode: darken;
+}
+
+.transportation .text-wrapper-6 {
+  top: 237px;
+  left: 261px;
+  position: absolute;
+  width: 36px;
+  font-family: "Istok Web", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.transportation .text-wrapper-7 {
+  top: 295px;
+  left: 262px;
+  position: absolute;
+  width: 36px;
+  font-family: "Istok Web", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.transportation .text-wrapper-8 {
+  top: 350px;
+  left: 261px;
+  position: absolute;
+  width: 36px;
+  font-family: "Istok Web", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.transportation .text-wrapper-9 {
+  top: 417px;
+  left: 260px;
+  position: absolute;
+  width: 36px;
+  font-family: "Istok Web", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.transportation .book-an-uber {
+  position: absolute;
+  top: 291px;
+  left: 133px;
+  font-family: "Istok Web", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.transportation .book-a-lyft {
+  position: absolute;
+  top: 410px;
+  left: 128px;
+  font-family: "Istok Web", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.transportation .rectangle-23 {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  top: 519px;
+  left: 143px;
+  mix-blend-mode: darken;
+  object-fit: cover;
+}

@@ -1,0 +1,362 @@
+.add-friends {
+  background-color: #fffbfb;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.add-friends .div {
+  background-color: #fffbfb;
+  overflow: hidden;
+  width: 320px;
+  height: 568px;
+  position: relative;
+}
+
+.add-friends .overlap-group {
+  position: absolute;
+  width: 329px;
+  height: 568px;
+  top: 0;
+  left: 0;
+}
+
+.add-friends .rectangle {
+  position: absolute;
+  width: 320px;
+  height: 568px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.add-friends .img {
+  position: absolute;
+  width: 205px;
+  height: 63px;
+  top: 460px;
+  left: 57px;
+}
+
+.add-friends .text-wrapper {
+  position: absolute;
+  width: 187px;
+  top: 473px;
+  left: 121px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.add-friends .contact-list {
+  position: absolute;
+  width: 329px;
+  height: 51px;
+  top: 34px;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.add-friends .group {
+  width: 40px;
+  left: 15px;
+  background-image: url(./img/ellipse-21-5.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  position: absolute;
+  height: 40px;
+  top: 6px;
+}
+
+.add-friends .rectangle-2 {
+  width: 250px;
+  top: 50px;
+  position: absolute;
+  height: 1px;
+  left: 63px;
+  background-color: var(--text-disable);
+}
+
+.add-friends .group-2 {
+  width: 108px;
+  left: 63px;
+  position: absolute;
+  height: 40px;
+  top: 6px;
+}
+
+.add-friends .text-wrapper-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: var(--text-dart);
+  font-size: 17px;
+  letter-spacing: 0;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+.add-friends .text-wrapper-3 {
+  position: absolute;
+  top: 22px;
+  left: 0;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: var(--text-light);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+.add-friends .contact-list-2 {
+  height: 51px;
+  top: 83px;
+  position: absolute;
+  width: 320px;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.add-friends .group-3 {
+  background-image: url(./img/ellipse-21-4.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 6px;
+  left: 15px;
+}
+
+.add-friends .rectangle-3 {
+  position: absolute;
+  width: 241px;
+  height: 1px;
+  top: 50px;
+  left: 63px;
+  background-color: var(--text-disable);
+}
+
+.add-friends .group-4 {
+  width: 111px;
+  left: 63px;
+  position: absolute;
+  height: 40px;
+  top: 6px;
+}
+
+.add-friends .contact-list-3 {
+  height: 52px;
+  top: 134px;
+  position: absolute;
+  width: 320px;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.add-friends .group-5 {
+  background-image: url(./img/ellipse-21-3.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 6px;
+  left: 15px;
+}
+
+.add-friends .rectangle-4 {
+  width: 241px;
+  top: 51px;
+  position: absolute;
+  height: 1px;
+  left: 63px;
+  background-color: var(--text-disable);
+}
+
+.add-friends .group-6 {
+  width: 120px;
+  left: 63px;
+  position: absolute;
+  height: 40px;
+  top: 6px;
+}
+
+.add-friends .contact-list-4 {
+  height: 52px;
+  top: 186px;
+  position: absolute;
+  width: 320px;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.add-friends .group-7 {
+  background-image: url(./img/ellipse-21-2.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 6px;
+  left: 15px;
+}
+
+.add-friends .group-8 {
+  width: 93px;
+  left: 62px;
+  position: absolute;
+  height: 40px;
+  top: 6px;
+}
+
+.add-friends .contact-list-5 {
+  height: 51px;
+  top: 238px;
+  position: absolute;
+  width: 320px;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.add-friends .group-9 {
+  background-image: url(./img/ellipse-21-1.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 6px;
+  left: 15px;
+}
+
+.add-friends .group-10 {
+  width: 100px;
+  left: 63px;
+  position: absolute;
+  height: 40px;
+  top: 6px;
+}
+
+.add-friends .contact-list-6 {
+  height: 52px;
+  top: 289px;
+  position: absolute;
+  width: 320px;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.add-friends .group-11 {
+  background-image: url(./img/ellipse-21.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 6px;
+  left: 15px;
+}
+
+.add-friends .group-12 {
+  width: 105px;
+  left: 63px;
+  position: absolute;
+  height: 40px;
+  top: 6px;
+}
+
+.add-friends .contact-list-7 {
+  height: 52px;
+  top: 341px;
+  position: absolute;
+  width: 320px;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.add-friends .group-13 {
+  background-color: #c4c4c4;
+  border-radius: 20px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 6px;
+  left: 15px;
+}
+
+.add-friends .group-14 {
+  width: 150px;
+  left: 63px;
+  position: absolute;
+  height: 40px;
+  top: 6px;
+}
+
+.add-friends .rectangle-5 {
+  position: absolute;
+  width: 84px;
+  height: 63px;
+  top: -80px;
+  left: -2260px;
+  object-fit: cover;
+}
+
+.add-friends .rectangle-6 {
+  position: absolute;
+  width: 84px;
+  height: 63px;
+  top: -80px;
+  left: -2376px;
+  object-fit: cover;
+}
+
+.add-friends .text-wrapper-4 {
+  position: absolute;
+  width: 90px;
+  top: 658px;
+  left: 312px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 28px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.add-friends .rectangle-7 {
+  position: absolute;
+  width: 146px;
+  height: 61px;
+  top: 325px;
+  left: -2491px;
+}
+
+.add-friends .text-wrapper-5 {
+  position: absolute;
+  width: 110px;
+  top: 659px;
+  left: 499px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 28px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.add-friends .rectangle-8 {
+  position: absolute;
+  width: 143px;
+  height: 61px;
+  top: 325px;
+  left: -2313px;
+}
