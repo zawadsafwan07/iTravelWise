@@ -1,0 +1,456 @@
+.events {
+  background-color: #000000;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.events .div {
+  background-color: #000000;
+  overflow: hidden;
+  width: 320px;
+  height: 568px;
+  position: relative;
+}
+
+.events .overlap-group {
+  position: absolute;
+  width: 368px;
+  height: 568px;
+  top: 0;
+  left: 0;
+}
+
+.events .rectangle {
+  position: absolute;
+  width: 320px;
+  height: 568px;
+  top: 0;
+  left: 0;
+  mix-blend-mode: lighten;
+  object-fit: cover;
+}
+
+.events .search-bar {
+  display: flex;
+  width: 352px;
+  height: 61px;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  top: 6px;
+  left: 16px;
+}
+
+.events .content {
+  display: flex;
+  height: 36px;
+  align-items: center;
+  padding: 8px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  background-color: var(--system-materialssm-l-thick);
+  border-radius: 10px;
+}
+
+.events .magnifyingglass {
+  position: relative;
+  margin-top: -4px;
+  margin-bottom: -4px;
+  width: 28px;
+  height: 28px;
+}
+
+.events .text-wrapper {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  font-family: "Imprima", Helvetica;
+  font-weight: 400;
+  color: var(--label-colorslc-l-secondary);
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 50px;
+  white-space: nowrap;
+  width: 28px;
+  height: 28px;
+}
+
+.events .placeholder-label {
+  position: relative;
+  flex: 1;
+  margin-top: -2px;
+  font-family: "Imprima", Helvetica;
+  font-weight: 400;
+  color: var(--label-colorslc-l-primary);
+  font-size: 17px;
+  letter-spacing: -0.41px;
+  line-height: 22px;
+}
+
+.events .cancel {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.events .img {
+  position: absolute;
+  width: 307px;
+  height: 39px;
+  top: 519px;
+  left: 7px;
+}
+
+.events .rectangle-2 {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 521px;
+  left: 275px;
+  object-fit: cover;
+}
+
+.events .rectangle-3 {
+  position: absolute;
+  width: 291px;
+  height: 83px;
+  top: 86px;
+  left: 19px;
+  background-color: #fdfafa;
+  border-radius: 10px;
+}
+
+.events .chasing-summer-nov {
+  position: absolute;
+  top: 95px;
+  left: 110px;
+  font-family: "Imprima", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.events .rectangle-4 {
+  position: absolute;
+  width: 53px;
+  height: 28px;
+  top: 135px;
+  left: 245px;
+}
+
+.events .rectangle-5 {
+  position: absolute;
+  width: 52px;
+  height: 41px;
+  top: 518px;
+  left: 7px;
+  object-fit: cover;
+}
+
+.events .rectangle-6 {
+  position: absolute;
+  width: 37px;
+  height: 38px;
+  top: 403px;
+  left: 139px;
+  object-fit: cover;
+}
+
+.events .group {
+  position: absolute;
+  width: 40px;
+  height: 35px;
+  top: 20px;
+  left: 260px;
+  mix-blend-mode: darken;
+  background-image: url(./img/rectangle-239.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.events .rectangle-7 {
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  top: 22px;
+  left: 220px;
+  object-fit: cover;
+}
+
+.events .rectangle-8 {
+  position: absolute;
+  width: 292px;
+  height: 91px;
+  top: 186px;
+  left: 18px;
+}
+
+.events .group-2 {
+  position: absolute;
+  width: 289px;
+  height: 97px;
+  top: 291px;
+  left: 18px;
+}
+
+.events .element {
+  top: 253px;
+  position: absolute;
+  width: 6px;
+  height: 11px;
+  left: 222px;
+}
+
+.events .element-2 {
+  top: 251px;
+  position: absolute;
+  width: 6px;
+  height: 11px;
+  left: 222px;
+}
+
+.events .element-3 {
+  position: absolute;
+  width: 6px;
+  height: 11px;
+  top: 142px;
+  left: 222px;
+}
+
+.events .element-4 {
+  position: absolute;
+  width: 6px;
+  height: 11px;
+  top: 251px;
+  left: 220px;
+}
+
+.events .text-wrapper-2 {
+  top: 250px;
+  left: 108px;
+  position: absolute;
+  width: 63px;
+  font-family: "Inria Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+
+.events .text-wrapper-3 {
+  top: 146px;
+  left: 111px;
+  position: absolute;
+  width: 63px;
+  font-family: "Inria Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+
+.events .taste-of-calgary-nov {
+  position: absolute;
+  width: 192px;
+  top: 191px;
+  left: 111px;
+  font-family: "Inria Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.events .rectangle-9 {
+  position: absolute;
+  width: 49px;
+  height: 28px;
+  top: 245px;
+  left: 245px;
+}
+
+.events .text-wrapper-4 {
+  top: 245px;
+  left: 254px;
+  position: absolute;
+  font-family: "Inria Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.events .text-wrapper-5 {
+  top: 135px;
+  left: 258px;
+  position: absolute;
+  font-family: "Inria Sans", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.events .rectangle-10 {
+  position: absolute;
+  width: 79px;
+  height: 69px;
+  top: 93px;
+  left: 26px;
+  mix-blend-mode: darken;
+  object-fit: cover;
+}
+
+.events .rectangle-11 {
+  position: absolute;
+  width: 26px;
+  height: 30px;
+  top: 133px;
+  left: 168px;
+  object-fit: cover;
+}
+
+.events .rectangle-12 {
+  position: absolute;
+  width: 33px;
+  height: 28px;
+  top: 244px;
+  left: 165px;
+  object-fit: cover;
+}
+
+.events .rectangle-13 {
+  position: absolute;
+  width: 81px;
+  height: 64px;
+  top: 200px;
+  left: 23px;
+  object-fit: cover;
+}
+
+.events .rectangle-14 {
+  position: absolute;
+  width: 229px;
+  height: 40px;
+  top: 461px;
+  left: 41px;
+  background-color: #f6feff;
+  filter: blur(4px);
+}
+
+.events .text-wrapper-6 {
+  position: absolute;
+  width: 186px;
+  top: 468px;
+  left: 63px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: -0.41px;
+  line-height: 22px;
+  white-space: nowrap;
+}
+
+.events .rectangle-15 {
+  position: absolute;
+  width: 37px;
+  height: 26px;
+  top: 244px;
+  left: 199px;
+}
+
+.events .rectangle-16 {
+  position: absolute;
+  width: 37px;
+  height: 26px;
+  top: 136px;
+  left: 199px;
+}
+
+.events .v {
+  top: 247px;
+  position: absolute;
+  width: 4px;
+  height: 19px;
+  left: 203px;
+}
+
+.events .v-2 {
+  top: 140px;
+  position: absolute;
+  width: 4px;
+  height: 19px;
+  left: 203px;
+}
+
+.events .text-wrapper-7 {
+  top: 243px;
+  position: absolute;
+  width: 11px;
+  left: 218px;
+  font-family: "Inria Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.events .text-wrapper-8 {
+  top: 134px;
+  position: absolute;
+  width: 11px;
+  left: 218px;
+  font-family: "Inria Sans", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.events .rectangle-17 {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 521px;
+  left: 146px;
+  mix-blend-mode: darken;
+  object-fit: cover;
+}
+
+.events .text-wrapper-9 {
+  position: absolute;
+  width: 183px;
+  top: -29px;
+  left: 30px;
+  font-family: "Imprima", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
+}
