@@ -1,0 +1,85 @@
+.payment-overlay {
+  background-color: #f6feff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.payment-overlay .overlap-group-wrapper {
+  background-color: #f6feff;
+  border: 1px solid;
+  border-color: #000000;
+  width: 320px;
+  height: 244px;
+}
+
+.payment-overlay .overlap-group {
+  position: relative;
+  height: 244px;
+  background-image: url(./img/rectangle-313.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.payment-overlay .overlap {
+  position: absolute;
+  width: 109px;
+  height: 85px;
+  top: 138px;
+  left: 28px;
+}
+
+.payment-overlay .rectangle {
+  background-color: #9efa65;
+  position: absolute;
+  width: 109px;
+  height: 85px;
+  top: 0;
+  left: 0;
+}
+
+.payment-overlay .text-wrapper {
+  position: absolute;
+  width: 69px;
+  top: 29px;
+  left: 20px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 35px;
+  text-align: center;
+  letter-spacing: -0.41px;
+  line-height: 22px;
+}
+
+.payment-overlay .div {
+  position: absolute;
+  width: 109px;
+  height: 85px;
+  top: 138px;
+  left: 160px;
+}
+
+.payment-overlay .rectangle-2 {
+  background-color: #ff0000;
+  position: absolute;
+  width: 109px;
+  height: 85px;
+  top: 0;
+  left: 0;
+}
+
+.payment-overlay .are-you-sure-you {
+  position: absolute;
+  width: 274px;
+  top: 34px;
+  left: 23px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: -0.41px;
+  line-height: 22px;
+}
