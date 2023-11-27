@@ -1,0 +1,190 @@
+.add-travel-documents {
+  background-color: #fffbfb;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.add-travel-documents .div {
+  background-color: #fffbfb;
+  overflow: hidden;
+  width: 320px;
+  height: 568px;
+  position: relative;
+}
+
+.add-travel-documents .overlap-group {
+  position: absolute;
+  width: 320px;
+  height: 568px;
+  top: 0;
+  left: 0;
+  background-image: url(./img/rectangle-325.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.add-travel-documents .text-wrapper {
+  position: absolute;
+  width: 264px;
+  top: 41px;
+  left: 9px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #ffffffd4;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.add-travel-documents .rectangle {
+  position: absolute;
+  width: 99px;
+  height: 86px;
+  top: 75px;
+  left: 13px;
+  object-fit: cover;
+}
+
+.add-travel-documents .text-wrapper-2 {
+  position: absolute;
+  width: 214px;
+  top: 182px;
+  left: 5px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.add-travel-documents .text-wrapper-3 {
+  position: absolute;
+  top: 331px;
+  left: 14px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.add-travel-documents .img {
+  position: absolute;
+  width: 103px;
+  height: 95px;
+  top: 221px;
+  left: 9px;
+  object-fit: cover;
+}
+
+.add-travel-documents .rectangle-2 {
+  position: absolute;
+  width: 103px;
+  height: 95px;
+  top: 372px;
+  left: 9px;
+  object-fit: cover;
+}
+
+.add-travel-documents .rectangle-3 {
+  position: absolute;
+  width: 103px;
+  height: 95px;
+  top: 372px;
+  left: 143px;
+  object-fit: cover;
+}
+
+.add-travel-documents .overlap {
+  position: absolute;
+  width: 123px;
+  height: 63px;
+  top: 487px;
+  left: 85px;
+}
+
+.add-travel-documents .rectangle-4 {
+  position: absolute;
+  width: 123px;
+  height: 63px;
+  top: 0;
+  left: 0;
+}
+
+.add-travel-documents .text-wrapper-4 {
+  position: absolute;
+  top: 16px;
+  left: 31px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.add-travel-documents .rectangle-5 {
+  position: absolute;
+  width: 84px;
+  height: 63px;
+  top: 603px;
+  left: -2667px;
+  object-fit: cover;
+}
+
+.add-travel-documents .rectangle-6 {
+  position: absolute;
+  width: 84px;
+  height: 63px;
+  top: 603px;
+  left: -2783px;
+  object-fit: cover;
+}
+
+.add-travel-documents .text-wrapper-5 {
+  position: absolute;
+  width: 90px;
+  top: 658px;
+  left: 312px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 28px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.add-travel-documents .rectangle-7 {
+  position: absolute;
+  width: 146px;
+  height: 61px;
+  top: 1008px;
+  left: -2898px;
+}
+
+.add-travel-documents .text-wrapper-6 {
+  position: absolute;
+  width: 110px;
+  top: 659px;
+  left: 499px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 28px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.add-travel-documents .rectangle-8 {
+  position: absolute;
+  width: 143px;
+  height: 61px;
+  top: 1008px;
+  left: -2720px;
+}
