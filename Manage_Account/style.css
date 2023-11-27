@@ -1,0 +1,237 @@
+.manage-account {
+  background-color: #fffbfb;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.manage-account .div {
+  background-color: #fffbfb;
+  overflow: hidden;
+  width: 320px;
+  height: 568px;
+  position: relative;
+}
+
+.manage-account .overlap-group {
+  position: absolute;
+  width: 320px;
+  height: 568px;
+  top: 0;
+  left: 0;
+  background-image: url(./img/rectangle-325.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.manage-account .text-wrapper {
+  position: absolute;
+  width: 264px;
+  top: 44px;
+  left: 5px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #ffffffd4;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.manage-account .rectangle {
+  position: absolute;
+  width: 302px;
+  height: 46px;
+  top: 78px;
+  left: 7px;
+}
+
+.manage-account .overlap {
+  position: absolute;
+  width: 302px;
+  height: 74px;
+  top: 218px;
+  left: 5px;
+}
+
+.manage-account .text-wrapper-2 {
+  position: absolute;
+  width: 236px;
+  top: 0;
+  left: 2px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.manage-account .img {
+  position: absolute;
+  width: 302px;
+  height: 46px;
+  top: 28px;
+  left: 0;
+}
+
+.manage-account .overlap-2 {
+  position: absolute;
+  width: 304px;
+  height: 74px;
+  top: 134px;
+  left: 5px;
+}
+
+.manage-account .text-wrapper-3 {
+  position: absolute;
+  width: 297px;
+  top: 0;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.manage-account .rectangle-2 {
+  position: absolute;
+  width: 302px;
+  height: 46px;
+  top: 28px;
+  left: 2px;
+}
+
+.manage-account .overlap-3 {
+  position: absolute;
+  width: 296px;
+  height: 63px;
+  top: 468px;
+  left: 11px;
+}
+
+.manage-account .rectangle-3 {
+  position: absolute;
+  width: 139px;
+  height: 63px;
+  top: 0;
+  left: 157px;
+}
+
+.manage-account .text-wrapper-4 {
+  position: absolute;
+  top: 5px;
+  left: 168px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 35px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.manage-account .rectangle-4 {
+  position: absolute;
+  width: 144px;
+  height: 63px;
+  top: 0;
+  left: 0;
+}
+
+.manage-account .text-wrapper-5 {
+  position: absolute;
+  width: 187px;
+  top: 8px;
+  left: 27px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.manage-account .text-wrapper-6 {
+  position: absolute;
+  width: 236px;
+  top: 301px;
+  left: 11px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.manage-account .rectangle-5 {
+  position: absolute;
+  width: 302px;
+  height: 46px;
+  top: 340px;
+  left: 5px;
+}
+
+.manage-account .rectangle-6 {
+  position: absolute;
+  width: 84px;
+  height: 63px;
+  top: -720px;
+  left: -1845px;
+  object-fit: cover;
+}
+
+.manage-account .rectangle-7 {
+  position: absolute;
+  width: 84px;
+  height: 63px;
+  top: -720px;
+  left: -1961px;
+  object-fit: cover;
+}
+
+.manage-account .text-wrapper-7 {
+  position: absolute;
+  width: 90px;
+  top: 658px;
+  left: 312px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 28px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.manage-account .rectangle-8 {
+  position: absolute;
+  width: 146px;
+  height: 61px;
+  top: -315px;
+  left: -2076px;
+}
+
+.manage-account .text-wrapper-8 {
+  position: absolute;
+  width: 110px;
+  top: 659px;
+  left: 499px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 28px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.manage-account .rectangle-9 {
+  position: absolute;
+  width: 143px;
+  height: 61px;
+  top: -315px;
+  left: -1898px;
+}

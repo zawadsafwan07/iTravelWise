@@ -1,0 +1,216 @@
+.log-in-screen {
+  background-color: #00000040;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.log-in-screen .overlap-group-wrapper {
+  background-color: #00000040;
+  transition: all 0.2s ease;
+  width: 345px;
+  height: 568px;
+}
+
+.log-in-screen .overlap-group {
+  position: relative;
+  height: 568px;
+  background-image: url(./img/rectangle-302.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.log-in-screen .app-logo {
+  position: absolute;
+  width: 156px;
+  height: 197px;
+  top: 75px;
+  left: 98px;
+  object-fit: cover;
+}
+
+.log-in-screen .overlap {
+  position: absolute;
+  width: 166px;
+  height: 25px;
+  top: 293px;
+  left: 16px;
+  background-image: url(./img/rectangle-1.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  border: 0;
+  background: none;
+  font-family: "Acme", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  padding: 0;
+}
+
+.log-in-screen .div {
+  position: absolute;
+  width: 157px;
+  height: 27px;
+  top: 338px;
+  left: 100px;
+}
+
+.log-in-screen .rectangle {
+  position: absolute;
+  width: 157px;
+  height: 26px;
+  top: 1px;
+  left: 0;
+}
+
+.log-in-screen .password {
+  position: absolute;
+  width: 77px;
+  height: 25px;
+  top: 0;
+  left: 14px;
+  background-color: transparent;
+  font-family: "Acme", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: 0;
+  padding: 0;
+}
+
+.log-in-screen .overlap-2 {
+  position: absolute;
+  width: 137px;
+  height: 70px;
+  top: 395px;
+  left: 111px;
+}
+
+.log-in-screen .text-wrapper {
+  position: absolute;
+  width: 65px;
+  top: 2px;
+  left: 33px;
+  font-family: "Acme", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.log-in-screen .text-wrapper-2 {
+  position: absolute;
+  width: 125px;
+  top: 42px;
+  left: 12px;
+  font-family: "Acme", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.log-in-screen .rectangle-2 {
+  position: absolute;
+  width: 84px;
+  height: 31px;
+  top: 0;
+  left: 20px;
+  border: 1px solid;
+  border-color: #ffffff1c;
+  mix-blend-mode: screen;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.33) 0%, rgba(255, 255, 255, 0.22) 100%);
+  transition: all 0.2s ease;
+}
+
+.log-in-screen .rectangle-3 {
+  position: absolute;
+  width: 125px;
+  height: 34px;
+  top: 36px;
+  left: 0;
+  border: 1px solid;
+  border-color: #ffffff1c;
+  mix-blend-mode: screen;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.33) 0%, rgba(255, 255, 255, 0.22) 100%);
+  transition: all 0.2s ease;
+}
+
+.log-in-screen .overlap-3 {
+  position: absolute;
+  width: 176px;
+  height: 38px;
+  top: 510px;
+  left: 164px;
+}
+
+.log-in-screen .rectangle-4 {
+  position: absolute;
+  width: 165px;
+  height: 38px;
+  top: 0;
+  left: 0;
+  background-color: #ffffff38;
+  mix-blend-mode: lighten;
+}
+
+.log-in-screen .text-wrapper-3 {
+  position: absolute;
+  width: 170px;
+  top: 7px;
+  left: 6px;
+  font-family: "Acme", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.log-in-screen .img {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 3px;
+  left: 123px;
+  object-fit: cover;
+}
+
+.log-in-screen .overlap-4 {
+  position: absolute;
+  width: 142px;
+  height: 51px;
+  top: 510px;
+  left: 18px;
+}
+
+.log-in-screen .text-wrapper-4 {
+  position: absolute;
+  width: 128px;
+  top: 7px;
+  left: 9px;
+  font-family: "Acme", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.log-in-screen .rectangle-5 {
+  position: absolute;
+  width: 142px;
+  height: 38px;
+  top: 0;
+  left: 0;
+  mix-blend-mode: lighten;
+}
