@@ -203,8 +203,81 @@
   white-space: nowrap;
 }
 
-button {
+.button {
   width: 70px; /* Set the desired width */
   height: 58px; /* Set the desired height */
   font-size: 18px; /* Set the desired font size */
+}
+
+#nameInput {
+  width: 170px; /* Set the width of the input */
+  height: 30px; /* Set the height of the input */
+  position: absolute; /* Set the position property to absolute */
+  left: 0px; /* Set the left position */
+  top: 0px; /* Set the top position */
+  padding: 5px; /* Set padding inside the input */
+  font-size: 16px; /* Set the font size of the text inside the input */
+}
+
+#usernameInput {
+  width: 170px; /* Set the width of the input */
+  height: 30px; /* Set the height of the input */
+  position: absolute; /* Set the position property to absolute */
+  left: 0px; /* Set the left position */
+  top: 0px; /* Set the top position */
+  padding: 5px; /* Set padding inside the input */
+  font-size: 16px; /* Set the font size of the text inside the input */
+}
+
+#passwordInput {
+  width: 170px; /* Set the width of the input */
+  height: 30px; /* Set the height of the input */
+  position: absolute; /* Set the position property to absolute */
+  left: 0px; /* Set the left position */
+  top: -1px; /* Set the top position */
+  padding: 5px; /* Set padding inside the input */
+  font-size: 16px; /* Set the font size of the text inside the input */
+}
+
+
+#createAccountButton {
+  width: 170%; /* Make the button take the full width of the text wrapper */
+  height: 40px; /* Set the height of the input */
+  padding: 10px; /* Add padding for button size */
+  font-size: 16px; /* Set the font size of the button text */
+  position: absolute;
+  left: -30px; /* Set the left position of the button */
+  top: -10px; /* Set the top position of the button */
+}
+
+.overlap img {
+  width: 100%; /* Make the image take the full width of the container */
+  height: 100%; /* Make the image take the full height of the container */
+  object-fit: cover; /* Ensure the image covers the entire space */
+  /* Additional styles as needed */
+}
+
+
+/* Style for the button */
+.overlap button {
+  width: 80px; /* Make the button take the full width of the container */
+  height: 55px; /* Make the button take the full height of the container */
+  padding: 10px; /* Add padding for button size */
+  font-size: 16px; /* Set the font size of the button text */
+  position: absolute;
+  opacity: 0;
+  left: 0px; /* Set the left position of the button */
+  top: 0px; /* Set the top position of the button */
+  /* Additional styles as needed */
+}
+
+#dobInput{
+  width: 170px; /* Make the button take the full width of the container */
+  height: 30px; /* Make the button take the full height of the container */
+  
+  font-size: 16px; /* Set the font size of the button text */
+  position: absolute;
+  left: 0px; /* Set the left position of the button */
+  top: 0px; /* Set the top position of the button */
+  /* Additional styles as needed */
 }
