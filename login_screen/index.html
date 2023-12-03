@@ -10,7 +10,7 @@
 
     function redirectToForgot() {
      
-      window.open('../Forgot_Password/index.html', 'SecondPage', 'width=600, height=400');
+      window.open('../Forgot_Password/index.html', 'SecondPage', 'width=300,height=230,top=200,left=450');
     
     }
 
@@ -31,16 +31,17 @@
     <div id="overlay"></div>
     <img class="app-logo" src="img/app-logo-1.png" />
     <img class="img" src="img/rectangle-1.png" />
-    <img class="rectangle-5" src="img/rectangle-244.svg" />
-    <img class="rectangle-6" src="img/rectangle-298.png" />
-    <div class="rectangle-3"></div>
-    <div class="rectangle-4"></div>
     <img class="rectangle-2" src="img/rectangle-2.svg" />
-    <div class="text-wrapper"> <button1 id="loginButton" onclick="redirectToLogin()">Log in</button1></div>
+    <div class="text-wrapper"> <button id="loginButton" class="log_in_button" onclick="redirectToLogin()">Log in</button></div>
     <div class="div"></div>
-    <div class="text-wrapper-2"> <button2 id="continueButton" onclick="redirectToLogin()">Continue with</button2></div>
-    <div class="text-wrapper-3"> <button3 id="forgotButton" onclick="redirectToForgot()">Forgot Password</button3></div>
-    <div class="text-wrapper-4"> <button4 id="createAccountButton" onclick="redirectToCreateAccount()">Create Account</button4></div>
+    <div class="text-wrapper-2">
+      <button id="continueButton" class="continue_button" onclick="redirectToLogin()">
+        
+        Continue with Google
+      </button>
+    </div>
+    <div class="text-wrapper-3"> <button id="forgotButton" class="forgot_pass_button" onclick="redirectToForgot()">Forgot Password</button></div>
+    <div class="text-wrapper-4"> <button id="createAccountButton" class="create_button" onclick="redirectToCreateAccount()">Create Account</button></div>
     
    
     
@@ -52,8 +53,10 @@
     <div class="input-wrapper">
       <input class="password" type="password" placeholder="Password" />
     </div>
-
-    
+  
   </div>
+
+
+
 </body>
 </html>
