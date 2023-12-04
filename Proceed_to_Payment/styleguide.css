@@ -1,0 +1,9 @@
+:root {
+  --colors-basic-light: rgba(255, 255, 255, 1);
+  --title-2-font-family: "Poppins-SemiBold", Helvetica;
+  --title-2-font-weight: 600;
+  --title-2-font-size: 22px;
+  --title-2-letter-spacing: 0.3499999940395355px;
+  --title-2-line-height: 28px;
+  --title-2-font-style: normal;
+}

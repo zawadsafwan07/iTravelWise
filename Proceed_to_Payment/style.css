@@ -1,0 +1,288 @@
+.proceed-to-payment {
+  background-color: #000000;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.proceed-to-payment .div {
+  background-color: #000000;
+  overflow: hidden;
+  width: 320px;
+  height: 568px;
+  position: relative;
+}
+
+.proceed-to-payment .overlap {
+  position: absolute;
+  width: 363px;
+  height: 568px;
+  top: 0;
+  left: -8px;
+}
+
+.proceed-to-payment .rectangle {
+  position: absolute;
+  width: 320px;
+  height: 568px;
+  top: 0;
+  left: 8px;
+  mix-blend-mode: lighten;
+  object-fit: cover;
+}
+
+.proceed-to-payment .headline {
+  position: absolute;
+  width: 343px;
+  top: 25px;
+  left: 20px;
+  font-family: var(--title-2-font-family);
+  font-weight: var(--title-2-font-weight);
+  color: #ffffff;
+  font-size: var(--title-2-font-size);
+  letter-spacing: var(--title-2-letter-spacing);
+  line-height: var(--title-2-line-height);
+  font-style: var(--title-2-font-style);
+}
+
+.proceed-to-payment .buttons {
+  position: absolute;
+  width: 301px;
+  height: 50px;
+  top: 367px;
+  left: 12px;
+  background-color: #ffffff8f;
+  border: 1px solid;
+  border-color: #000000;
+  box-shadow: inset 0px 4px 4px #00000040;
+}
+
+.proceed-to-payment .button {
+  height: 50px;
+  background-color: #ffffff1c;
+  border-radius: 5px;
+}
+
+.proceed-to-payment .buttons-2 {
+  width: 301px;
+  top: 298px;
+  left: 12px;
+  background-color: #ffffff7d;
+  box-shadow: inset 0px 4px 4px #00000040;
+  mix-blend-mode: hard-light;
+  position: absolute;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.proceed-to-payment .text-wrapper {
+  position: absolute;
+  top: 380px;
+  left: 73px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: -0.41px;
+  line-height: 22px;
+  white-space: nowrap;
+}
+
+.proceed-to-payment .img {
+  position: absolute;
+  width: 306px;
+  height: 45px;
+  top: 513px;
+  left: 15px;
+}
+
+.proceed-to-payment .rectangle-2 {
+  position: absolute;
+  width: 36px;
+  height: 40px;
+  top: 517px;
+  left: 275px;
+  object-fit: cover;
+}
+
+.proceed-to-payment .rectangle-3 {
+  position: absolute;
+  width: 52px;
+  height: 41px;
+  top: 517px;
+  left: 17px;
+  object-fit: cover;
+}
+
+.proceed-to-payment .master-card-simple {
+  position: absolute;
+  width: 270px;
+  height: 185px;
+  top: 93px;
+  left: 0;
+}
+
+.proceed-to-payment .overlap-group {
+  position: relative;
+  width: 335px;
+  height: 185px;
+  background-color: #ffffff08;
+  border-radius: 20px;
+  backdrop-filter: blur(80px) brightness(100%);
+  -webkit-backdrop-filter: blur(80px) brightness(100%);
+  background: linear-gradient(180deg, rgb(4, 40, 67) 12.22%, rgb(114, 110, 158) 87.89%);
+}
+
+.proceed-to-payment .overlap-2 {
+  position: absolute;
+  width: 304px;
+  height: 161px;
+  top: 24px;
+  left: 24px;
+}
+
+.proceed-to-payment .effect {
+  position: absolute;
+  width: 276px;
+  height: 131px;
+  top: 30px;
+  left: 28px;
+}
+
+.proceed-to-payment .number {
+  position: absolute;
+  top: 112px;
+  left: 0;
+  font-family: "IBM Plex Mono", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.proceed-to-payment .put-name-here {
+  position: absolute;
+  top: 88px;
+  left: 0;
+  font-family: "IBM Plex Mono", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.proceed-to-payment .logo {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 0;
+  left: 239px;
+}
+
+.proceed-to-payment .overlap-group-2 {
+  position: relative;
+  height: 30px;
+  top: 9px;
+}
+
+.proceed-to-payment .ellipse {
+  left: 0;
+  background-color: #eb001b;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  border-radius: 15px;
+}
+
+.proceed-to-payment .ellipse-2 {
+  left: 18px;
+  background-color: #f79e1b;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  border-radius: 15px;
+}
+
+.proceed-to-payment .intersect {
+  position: absolute;
+  width: 14px;
+  height: 24px;
+  top: 3px;
+  left: 17px;
+}
+
+.proceed-to-payment .credit-text {
+  position: absolute;
+  top: 27px;
+  left: 24px;
+  opacity: 0.9;
+  font-family: "Ubuntu", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.proceed-to-payment .overlap-wrapper {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 300px;
+  left: 254px;
+}
+
+.proceed-to-payment .text-wrapper-2 {
+  position: absolute;
+  top: 311px;
+  left: 70px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 22px;
+  text-align: center;
+  letter-spacing: -0.41px;
+  line-height: 22px;
+  white-space: nowrap;
+}
+
+.proceed-to-payment .label-wrapper {
+  width: 345px;
+  top: 794px;
+  left: 86px;
+  background-color: #007aff;
+  position: absolute;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.proceed-to-payment .label {
+  position: relative;
+  width: 311px;
+  height: 48px;
+  top: 1px;
+  left: 17px;
+}
+
+.proceed-to-payment .label-2 {
+  position: absolute;
+  top: 12px;
+  left: 92px;
+  font-family: "Open Sans", Helvetica;
+  font-weight: 300;
+  color: var(--colors-basic-light);
+  font-size: 17px;
+  text-align: center;
+  letter-spacing: -0.41px;
+  line-height: 22px;
+  white-space: nowrap;
+}
