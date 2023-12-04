@@ -12,13 +12,14 @@
       function redirectToPortal() {
       window.location.href = '../Portal/index.html';
       }
-  
+      
+      
       function redirectToOverlay() {
-        window.location.href = '../Overlay_App/index.html';
+        window.open('../Overlay_App/index.html', 'SecondPage', 'width=310,height=314,top=200,left=480');
       }
 
       function redirectToLocationOverlay() {
-        window.location.href = '../Overlay_Location/index.html';
+        window.open('../Overlay_Location/index.html', 'SecondPage', 'width=300,height=244,top=200,left=450');
       }
 
       function redirectToEventCreation() {
@@ -72,34 +73,40 @@
             <div class="cancel"></div>
           </div>
           <img class="img" src="img/rectangle-26.svg" />
-          <button id="ShareLocation" onclick="redirectToLocationOverlay()">
-            <img class="rectangle-2" src="img/rectangle-28.png" alt="Location Overlay" />
-          </button>
+          <a href="#" onclick="redirectToLocationOverlay()">
+            <img class="rectangle-2" src="img/rectangle-28.png"  />
+          </a>
           <div class="rectangle-3"></div>
           <p class="chasing-summer-nov">Chasing Summer | Nov 11<br />4:00pm,&nbsp;&nbsp;Riley Park, Calgary</p>
           <img class="rectangle-4" src="img/rectangle-33.svg" />
-          <button id="GoToPortal" onclick="redirectToPortal()">
+
+
+          <a href="#" onclick="redirectToPortal()">
             <img class="rectangle-5" src="img/rectangle-222.png" alt="Go To Portal" />
-          </button>
-          <button id="CreateEvent" onclick="redirectToEventCreation()">
+        </a>
+
+        <a href="#" onclick="redirectToEventCreation()">
             <img class="rectangle-6" src="img/rectangle-238.png" alt="Create event" />
-          </button>
+        </a>
           <div class="group"></div>
         
 
           <img class="rectangle-7" src="img/rectangle-236.png" />
           <button type="ProceedToPayment"> <img class="rectangle-8" src="img/rectangle-257.svg" /></button>
           
-          <button id="CalgaryStampedeProceedPayment" onclick="ProceedToPayment()">
+          <a href="#" onclick="ProceedToPayment()">
             <img class="group-2" src="img/group-712.png" alt="Stampede Payment" />
-          </button>
+          </a>
 
           <img class="element" src="img/5.svg" />
           <img class="element-2" src="img/5.svg" />
           <img class="element-3" src="img/5.svg" />
           <img class="element-4" src="img/5.svg" />
-          <div class="text-wrapper-2"> <button1 id="Comments" onclick="redirectToCommunityBlog()"><Proceed To Payment></Proceed>Comments</div>
-          <div class="text-wrapper-3"> <button2 id="Comments" onclick="redirectToCommunityBlog()"></button2>Comments</div>
+          <div class="text-wrapper-2"> 
+            <a href="#" onclick="redirectToCommunityBlog()">
+            <Proceed To Payment></Proceed>Comments</div> </a>
+          <div class="text-wrapper-3"> 
+            <a href="#" onclick="redirectToCommunityBlog()">Comments</a></div>
           <p class="taste-of-calgary-nov">Taste of Calgary |&nbsp;&nbsp;Nov 24<br />5:00pm , Dining Hall , Calgary</p>
           <img class="rectangle-9" src="img/rectangle-260.svg" />
           <div class="text-wrapper-4"> <button3 id="ProceedToPayment" onclick="ProceedToPayment()"><Proceed To Payment></Proceed>$20</div>
@@ -109,7 +116,9 @@
           
           <img class="rectangle-13" src="img/rectangle-275.png" />
           <div class="rectangle-14"></div>
-          <div class="text-wrapper-6"> <button5 id="ProceedToPayment" onclick="ProceedToPayment()"><Proceed To Payment></Proceed>Proceed to Payment</div>
+          <div class="text-wrapper-6">
+             <button5 id="ProceedToPayment" onclick="ProceedToPayment()">
+              <Proceed To Payment></Proceed>Proceed to Payment</div>
 
           <img class="rectangle-15" src="img/rectangle-295.svg" />
           <img class="rectangle-16" src="img/rectangle-295.svg" />
@@ -119,9 +128,9 @@
           <div class="text-wrapper-8">1</div>
 
 
-          <button id="overlay_button" onclick="redirectToOverlay()">
+          <a href="#" onclick="redirectToOverlay()">
             <img class="rectangle-17" src="img/rectangle-320.png" alt="Go To Overlay" />
-          </button>
+          </a>>
 
           </div>
         </div>

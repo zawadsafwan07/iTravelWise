@@ -50,6 +50,10 @@
         padding: 5px;
         font-size: 16px;
       }
+     
+
+
+
     </style>
 
     <script>
@@ -58,7 +62,7 @@
       }
 
       function redirectToPortal() {
-      window.location.href = '../Portal/index.html';
+      window.location.href = '../events/index.html';
       }
 
       function redirectToOverlay() {
@@ -66,7 +70,7 @@
       }
 
       function redirectToLocationOverlay() {
-        window.location.href = '../Overlay_Location/index.html';
+        window.open('../Overlay_Location/index.html', 'SecondPage', 'width=300,height=244,top=200,left=450');
       }
 
       function redirectToEventCreation() {
@@ -79,6 +83,10 @@
 
       function redirectToCommunityBlog() {
         window.location.href = '../Community_Blog/index.html';
+      }
+
+      function Event_Created(){
+        window.open('../Event_Created/index.html', 'SecondPage', 'width=300,height=244,top=200,left=450');
       }
 
       function clearAllFields() {
@@ -97,6 +105,7 @@
         categoryDropdown.value = ''; // Set value to empty string
         categoryDropdown.selectedIndex = 0; // Select the first option
       }
+      
 
     </script>
   </head>
@@ -268,8 +277,14 @@
             <label for="location-name" class="text-wrapper-8"></label>
             <input type="text" id="location-name" class="location-name-input" placeholder="Enter Event Location">
           </div>
-
-
+          
+          <!-- Finalize Event button -->
+          <a href="#" onclick="Event_Created()">
+            <div class="overlap-7">
+                <div class="text-wrapper-11">Finalize Event</div>
+            </div>
+          </a>
+        
           <!-- Modified "Event Time" input -->
           <div class="overlap-5">
             <input type="time" class="event-time-input" placeholder="Event Time">
@@ -288,19 +303,12 @@
               <!-- Add more categories as needed -->
             </select>
           </div>
-
-           <!-- Finalize Event button -->
-           <button id="finalize-event-button" onclick="redirectToFinalizeEventOverlay()">
-            <div class="overlap-7">
-            <div class="text-wrapper-11">Finalize Event</div>
-          </button>
-          
           <div class="overlap-8">
             <img class="img" src="img/rectangle-223.svg" />
             <div class="rectangle-3"></div>
             <img class="rectangle-4" src="img/rectangle-225.png" />
             <button id="LocationOverlay" onclick="redirectToLocationOverlay()">
-              <img class="rectangle-4" src="img/rectangle-225.png" alt="Go To Location Overlay" />
+              <img class="rectangle-4" id =location_sybmol src="img/rectangle-225.png" alt="Go To Location Overlay" />
             </button>
 
             <img class="rectangle-5" src="img/rectangle-226.png" />
@@ -309,9 +317,15 @@
               <img class="rectangle-5" src="img/rectangle-226.png" alt="Go To Portal" />
             </button>
           </div>
-          <button id="clear-fields-button" onclick="clearAllFields()">
+
+          
+            <a href="#" onclick="clearAllFields()">
             <img class="rectangle-6" src="img/rectangle-256.png" alt="Clear Fields" />
-          </button>
+            </a>
+
+           
+          
+          
         </div>
       </div>
     </div>

@@ -964,3 +964,8 @@
   mix-blend-mode: hard-light;
   object-fit: cover;
 }
+
+.finalize-event-button{
+  opacity: 0;
+
+}
