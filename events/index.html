@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="styleguide.css" />
+
     <script>
       function ProceedToPayment() {
         window.location.href = '../Proceed_to_Payment/index.html';
@@ -28,10 +29,35 @@
         window.location.href = '../Community_Blog/index.html';
       }
 
+      function incrementQuantity() {
+            var quantityInput = document.getElementById('quantity');
+            quantityInput.value = parseInt(quantityInput.value) + 1;
+        }
+
+        function decrementQuantity() {
+            var quantityInput = document.getElementById('quantity');
+            if (parseInt(quantityInput.value) > 0) {
+                quantityInput.value = parseInt(quantityInput.value) - 1;
+            }
+        }
+
   </script>
     <link rel="stylesheet" href="style.css" />
+    <title>Quantity Picker</title>
   </head>
   <body>
+
+    <div class="quantity-picker" style="position: absolute; top: (adjust top position); left: (adjust left position);" class="increment_decrement">
+      <!-- Decrement button -->
+      <button class="quantity-button" onclick="decrementQuantity()"> <img class="v" src="img/v.png" />-</button>
+      
+      <!-- Quantity input -->
+      <input type="text" id="quantity" class="quantity-input" value="1" readonly>
+
+      <!-- Increment button -->
+      <button class="quantity-button" onclick="incrementQuantity()">+</button>
+    
+    </div>
 
     <div class="events">
       <div class="div">
