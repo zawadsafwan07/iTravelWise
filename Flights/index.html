@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+
+  function exchangeLocations() {
+        var departureLocation = document.getElementById("locationText").innerHTML;
+        var arrivalLocation = document.getElementById("arrivalLocation").innerHTML;
+
+        // Swap the content
+        document.getElementById("locationText").innerHTML = arrivalLocation;
+        document.getElementById("arrivalLocation").innerHTML = departureLocation;
+    }
+    
+    function toggleLocationText() {
+        var locationText = document.getElementById("locationText");
+        if (locationText.style.display === "none") {
+            locationText.style.display = "block";
+        } else {
+            locationText.style.display = "none";
+        }
+    }
+    
+      function redirectToPortal() {
+            window.location.href = '../Portal/index.html';
+          }
+
+      function ToPayment() {
+        window.location.href = '../Proceed_To_Payment/index.html';
+      }
+
+      function AppOverlay() {
+     window.open('../Overlay_App/index.html', 'SecondPage', 'width=310,height=314,top=200,left=480');
+      }
+
+     function LocationOverlay() {
+     window.open('../Overlay_Location/index.html', 'SecondPage', 'width=300,height=244,top=200,left=450');
+   
+   }
+
+   function FC_AirCanada() {
+     window.open('../Flight_Confirmed_AC/index.html', 'SecondPage', 'width=310,height=314,top=200,left=480');
+      }
+    
+      function FC_WestJet() {
+     window.open('../Flight_Confirmed_WJ/index.html', 'SecondPage', 'width=310,height=314,top=200,left=480');
+      }
+
+
+    </script>
+  </head>
+  <body>
+   
+    <div class="flights-booking">
+      <div class="overlap-wrapper">
+        <div class="overlap">
+          <div class="boxes">
+            <img class="img" src="img/vector.svg"/>
+            <label for="choose-date">Depart</label>
+            <input id="choose-date" class="choose-date" type="date" placeholder="Choose Date" /> 
+        </div>
+        
+        
+        
+          <div class="overlap-group">
+            <div class="boxes-2">
+              <img class="group" src="img/group-686.png" />
+              <select id="numberDropdown" class="number-dropdown">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+  
+                <!-- Add more options as needed -->
+              </select>
+            </div>
+            <div class="overlap-group-wrapper">
+              <div class="overlap-group-2">
+                <img class="rectangle" src="img/rectangle-5-2.svg" />
+                <div class="element-USD">512 CAD</div>
+                <p class="element-aug-sep">
+                  Air Canada<br />14 June 5:00pm <br />
+                  2 passenger
+                </p>
+                <img class="vector-2" src="img/vector-2-1.svg" />
+                <img class="vector-3" src="img/vector-3-1.svg" />
+                <div class="frame"><div class="text-wrapper-2">Best price</div></div>
+                <img class="delete" src="img/delete-1.png" />
+              </div>
+            </div>
+
+            <div class="positioned-div"> 
+              <img class="img" src="img/vector.svg"/>
+              <label for="arrive-date">Arrive</label>
+              <input id="arrive-date" class="choose-date" type="date" placeholder="Choose Date" />
+          </div>
+          <a href="#" onclick="FC_AirCanada()">
+            <img class="rectangle-2" src="img/rectangle-236-1.svg" />
+            <div class="text-wrapper-3">Book</div>
+            </a>
+            <img class="rectangle-4" src="img/rectangle-291.png" />
+          </div>
+          <div class="overlap-2">
+            <div class="vector-wrapper"><img class="vector-4" src="img/vector-1.svg" /></div>
+            <a href="#" onclick="exchangeLocations()">
+            <img class="compare-arrows" src="img/compare-arrows.svg" />
+          </a>
+            <div id="locationText" class="text-wrapper-4">Calgary, AB, CA</div>
+            <div id="arrivalLocation" class="text-wrapper-5">Vancouver, BC, CA</div>
+            <a href="#" onclick="toggleLocationText()">
+            <img class="rectangle-5" src="img/rectangle-236.png" /> <!-- Search Location -->
+          </a>
+          </div>
+
+          
+
+
+          <div class="overlap-3">
+            <div class="div-wrapper">
+              <div class="overlap-4">
+                <div class="element-USD-2">700 CAD</div>
+                <div class="overlap-5">
+                  <div class="overlap-group-3">
+                    <p class="p">
+                      Westjet<br />14 June 9:00 am <br />
+                      2 passenger
+                    </p>
+                    <img class="vector-5" src="img/vector-2.svg" />
+                  </div>
+                  <img class="vector-6" src="img/vector-3.svg" />
+                  <img class="delete-2" src="img/delete.png" />
+                </div>
+              </div>
+            </div>
+            <a href="#" onclick="FC_WestJet()">
+            <img class="rectangle-6" src="img/rectangle-237.svg" />
+            <div class="text-wrapper-6">Book</div>
+            </a>
+            <img class="rectangle-7" src="img/rectangle-292.png" />
+          </div>
+          <div class="overlap-6">
+            <img class="rectangle-8" src="img/rectangle-227.svg" />
+            <a href="#" onclick="LocationOverlay()">
+            <img class="rectangle-9" src="img/rectangle-229.png" />
+          </a>
+            <a href="#" onclick="redirectToPortal()">
+            <img class="rectangle-10" src="img/rectangle-230.png" />
+          </a>
+          <a href="#" onclick="AppOverlay()">
+            <img class="rectangle-11" src="img/rectangle-320.png" />
+          </a>
+          </div>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

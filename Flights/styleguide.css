@@ -1,0 +1,18 @@
+:root {
+  --headlines: rgba(0, 0, 0, 1);
+  --blue: rgba(0, 122, 255, 1);
+  --gray-icon: rgba(163, 163, 163, 1);
+  --gray-text: rgba(119, 119, 119, 1);
+  --title-1-font-family: "Poppins-SemiBold", Helvetica;
+  --title-1-font-weight: 600;
+  --title-1-font-size: 25px;
+  --title-1-letter-spacing: 0px;
+  --title-1-line-height: 28px;
+  --title-1-font-style: normal;
+  --secondary-not-active-font-family: "OpenSans-Regular", Helvetica;
+  --secondary-not-active-font-weight: 400;
+  --secondary-not-active-font-size: 17px;
+  --secondary-not-active-letter-spacing: -0.4099999964237213px;
+  --secondary-not-active-line-height: 22px;
+  --secondary-not-active-font-style: normal;
+}

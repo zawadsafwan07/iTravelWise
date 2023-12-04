@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="globals.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function redirectToLogin() {
+      window.location.href = '../Portal/index.html';
+    }
+
+    function redirectToForgot() {
+     
+      window.open('../Forgot_Password/index.html', 'SecondPage', 'width=300,height=230,top=200,left=450');
+    
+    }
+
+    function redirectToCreateAccount() {
+      window.location.href = '../Create_Account/index.html';
+    }
+
+    function redirectToContinue() {
+      window.location.href = '../Portal/index.html';
+    }
+
+    
+  </script>
+</head>
+<body>
+  <div class="log-in-screen ">
+    
+    <img class="rectangle" src="img/rectangle-302.jpg" />
+    <div id="overlay"></div>
+    <img class="app-logo" src="img/app-logo-1.png" />
+    <img class="img" src="img/rectangle-1.png" />
+    <img class="rectangle-2" src="img/rectangle-2.svg" />
+    <div class="text-wrapper"> <button id="loginButton" class="log_in_button" onclick="redirectToLogin()">Log in</button></div>
+    <div class="div"></div>
+    <div class="text-wrapper-2">
+      <a href="#" onclick="redirectToLogin()">
+      <button id="continueButton" class="continue_button" onclick="redirectToLogin()">
+        
+        Continue with Google
+      </button>
+    </a>
+    </div>
+    <div class="text-wrapper-3"> <button id="forgotButton" class="forgot_pass_button" onclick="redirectToForgot()">Forgot Password</button></div>
+    <div class="text-wrapper-4"> <button id="createAccountButton" class="create_button" onclick="redirectToCreateAccount()">Create Account</button></div>
+    
+   
+    
+
+    <!-- Add input fields for username and password -->
+    <div class="input-wrapper">
+      <input class="username" type="text" placeholder="Username" />
+    </div>
+    <div class="input-wrapper">
+      <input class="password" type="password" placeholder="Password" />
+    </div>
+  
+  </div>
+
+
+
+</body>
+</html>
