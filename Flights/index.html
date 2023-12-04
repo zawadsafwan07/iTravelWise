@@ -41,6 +41,14 @@
    
    }
 
+   function FC_AirCanada() {
+     window.open('../Flight_Confirmed_AC/index.html', 'SecondPage', 'width=310,height=314,top=200,left=480');
+      }
+    
+      function FC_WestJet() {
+     window.open('../Flight_Confirmed_WJ/index.html', 'SecondPage', 'width=310,height=314,top=200,left=480');
+      }
+
 
     </script>
   </head>
@@ -50,17 +58,27 @@
       <div class="overlap-wrapper">
         <div class="overlap">
           <div class="boxes">
-            <img class="vector" src="img/vector-8.svg" />
-            <div class="choose-data">Departure: 14 June</div>
-          </div>
-          <div class="div">
-            <img class="img" src="img/vector.svg" />
-            <div class="text-wrapper">Return: 22 July</div>
-          </div>
+            <img class="img" src="img/vector.svg"/>
+            <label for="choose-date">Depart</label>
+            <input id="choose-date" class="choose-date" type="date" placeholder="Choose Date" /> 
+        </div>
+        
+        
+        
           <div class="overlap-group">
             <div class="boxes-2">
               <img class="group" src="img/group-686.png" />
-              <div class="element">2</div>
+              <select id="numberDropdown" class="number-dropdown">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+  
+                <!-- Add more options as needed -->
+              </select>
             </div>
             <div class="overlap-group-wrapper">
               <div class="overlap-group-2">
@@ -76,10 +94,16 @@
                 <img class="delete" src="img/delete-1.png" />
               </div>
             </div>
-            
+
+            <div class="positioned-div"> 
+              <img class="img" src="img/vector.svg"/>
+              <label for="arrive-date">Arrive</label>
+              <input id="arrive-date" class="choose-date" type="date" placeholder="Choose Date" />
+          </div>
+          <a href="#" onclick="FC_AirCanada()">
             <img class="rectangle-2" src="img/rectangle-236-1.svg" />
             <div class="text-wrapper-3">Book</div>
-            
+            </a>
             <img class="rectangle-4" src="img/rectangle-291.png" />
           </div>
           <div class="overlap-2">
@@ -114,9 +138,10 @@
                 </div>
               </div>
             </div>
-            
+            <a href="#" onclick="FC_WestJet()">
             <img class="rectangle-6" src="img/rectangle-237.svg" />
             <div class="text-wrapper-6">Book</div>
+            </a>
             <img class="rectangle-7" src="img/rectangle-292.png" />
           </div>
           <div class="overlap-6">

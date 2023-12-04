@@ -22,7 +22,7 @@
 
 .flights-booking .boxes {
   display: flex;
-  width: 154px;
+  width: 220px;
   height: 27px;
   align-items: center;
   gap: 10px;
@@ -61,17 +61,18 @@
 
 .flights-booking .div {
   display: flex;
-  width: 141px;
-  height: 24px;
+  width: 210px;
+  height: 27px;
   align-items: center;
   gap: 10px;
   padding: 6px 10px;
-  top: 115px;
-  left: 165px;
-  border: 1px solid;
   position: absolute;
+  top: 145px;
+  left: 5px;
   background-color: #ffffff;
   border-radius: 5px;
+  border: 2px solid;
+  border-color: #fdfafa;
 }
 
 .flights-booking .img {
@@ -106,14 +107,14 @@
 
 .flights-booking .boxes-2 {
   display: flex;
-  width: 44px;
-  height: 24px;
+  width: 70px;
+  height: 22px;
   align-items: center;
   justify-content: center;
   gap: 10px;
   padding: 6px 10px;
   top: 1px;
-  left: 2px;
+  left: 230px;
   border: 1px solid;
   position: absolute;
   background-color: #ffffff;
@@ -604,3 +605,20 @@
   top: 513px; /* Set the top position of the button */
 
 }
+
+.positioned-div {
+  display: flex;
+  width: 220px;
+  height: 27px;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 10px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 2px solid;
+  border-color: #fdfafa;
+}
+
