@@ -532,3 +532,47 @@
   top : -100px;
   left: 200px;
 }
+
+#cancel_transit{
+  width: 70px; /* Make the button take the full width of the container */
+  height: 25px; /* Make the button take the full height of the container */
+  opacity:0 ;
+  font-size: 16px; /* Set the font size of the button text */
+  position: absolute;
+  left: -12px; /* Set the left position of the button */
+  top: 0px; /* Set the top position of the button */
+  /* Additional styles as needed */
+}
+
+#cancel_event{
+  width: 70px; /* Make the button take the full width of the container */
+  height: 25px; /* Make the button take the full height of the container */
+  opacity:0 ;
+  font-size: 16px; /* Set the font size of the button text */
+  position: absolute;
+  left: -12px; /* Set the left position of the button */
+  top: 0px; /* Set the top position of the button */
+  /* Additional styles as needed */
+}
+
+#cancel_hotel{
+  width: 70px; /* Make the button take the full width of the container */
+  height: 25px; /* Make the button take the full height of the container */
+  opacity:0 ;
+  font-size: 16px; /* Set the font size of the button text */
+  position: absolute;
+  left: -12px; /* Set the left position of the button */
+  top: 0px; /* Set the top position of the button */
+  /* Additional styles as needed */
+}
+
+#cancel_flight{
+  width: 70px; /* Make the button take the full width of the container */
+  height: 25px; /* Make the button take the full height of the container */
+  opacity:0 ;
+  font-size: 16px; /* Set the font size of the button text */
+  position: absolute;
+  left: -12px; /* Set the left position of the button */
+  top: 0px; /* Set the top position of the button */
+  /* Additional styles as needed */
+}

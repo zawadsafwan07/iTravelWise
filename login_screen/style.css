@@ -272,7 +272,12 @@
 
 
 
-
+img {
+  width: 100%; /* Make the image take the full width of the container */
+  height: 100%; /* Make the image take the full height of the container */
+  object-fit: cover; /* Ensure the image covers the entire space */
+  /* Additional styles as needed */
+}
 
 
 
