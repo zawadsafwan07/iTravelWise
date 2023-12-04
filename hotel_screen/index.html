@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hotel Booking Page</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="booking-app">
+  <div class="search-container">
+    <input type="text" id="location-input" placeholder="Search Location">
+  </div>
+  
+  <div class="calendar-container">
+    <input type="date" id="check-in-date">
+    <input type="date" id="check-out-date">
+  </div>
+
+  <div class="hotel-list">
+    <div class="hotel">
+      <img src="https://tse1.mm.bing.net/th?id=OIP.CBt1uuIr1ji6Y-x_hSaW9AHaDt&pid=Api&P=0&h=180" alt="Hotel California" class="hotel-image">
+      <div class="hotel-info">
+        <h2>Hotel California</h2>
+        <p>$59 / night</p>
+        <p class="reviews">★★★★☆ (84 reviews)</p>
+        <button class="book-button" onclick="bookHotel('Hotel California')">Book</button>
+      </div>
+    </div>
+
+    <div class="hotel">
+      <img src="https://tse2.mm.bing.net/th?id=OIP.x3xeTOWppi82_wjSggjSHgHaFj&pid=Api&P=0&h=180" alt="Westin" class="hotel-image">
+      <div class="hotel-info">
+        <h2>Westin</h2>
+        <p>$79 / night</p>
+        <p class="reviews">★★★★☆ (75 reviews)</p>
+        <button class="book-button" onclick="bookHotel('Westin')">Book</button>
+      </div>
+    </div>
+  </div>
+
+  <button id="proceed-payment">Proceed To Payment</button>
+  <a href="https://www.google.com/maps/@37.0625,-95.677068,4z" target="_blank">
+    <button class="google-maps-button">
+      <img src="https://tse3.mm.bing.net/th?id=OIP.DTrytJh3pDBSguzzeLDXUgHaKn&pid=Api&P=0&h=180" alt="Google Maps" class="google-maps-icon">
+    </button>
+  </a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
