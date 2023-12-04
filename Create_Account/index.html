@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+
+   <script>
+    function redirectToLogin() {
+      window.location.href = '../login_screen/index.html';
+    }
+    
+    function redirectToContinue() {
+      window.location.href = '../Portal/index.html';
+    }
+
+    
+  </script> 
+    
+  </head>
+  <body>
+    <div class="create-accouint">
+      <div class="overlap-group-wrapper">
+        <div class="overlap-group">
+          <p id ="Text1" >Create New Account</pp>
+          
+          <div class="overlap">
+            <a href="#" onclick="redirectToLogin()">
+            <button onclick="redirectToLogin()"></button>
+            <img class="img" src="img/rectangle-226.png" />
+          </a>
+          </div>
+          <div class="div-wrapper">
+          <input type="text" id="nameInput" placeholder="Your Name"></div>
+          <div class="div"><div class="text-wrapper-2" ></div>
+          <input type="date" id="dobInput" ><p>Date of Birth</pp>  </div>
+          
+          <div class="overlap-2">
+            
+            
+            <div class="text-wrapper-3"></div>
+            <input type="text" id="usernameInput" placeholder="Username"></div>
+          
+          <div class="overlap-3"><div class="text-wrapper-4"></div>
+          <input class="password" id="passwordInput" type="password" placeholder="Password" /></div>
+         
+          <div class="overlap-4"><div class="text-wrapper-5"><button id="createAccountButton" onclick="redirectToContinue()">Sign Up</button></div></div>
+          
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

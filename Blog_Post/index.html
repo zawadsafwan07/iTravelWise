@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+
+   <script>
+    function redirectBack2ComBlog() {
+        window.location.href = '../Community_Blog/index.html';
+      }
+
+
+    
+    function redirectToCommunityBlog() {
+      window.open('../Overlay_Blog/index.html', 'SecondPage', 'width=300,height=230,top=200,left=450');
+
+      }
+    
+    
+
+    
+  </script> 
+    
+  </head>
+  <body>
+    
+    <div class="create-accouint">
+      <div class="overlap-group-wrapper">
+        <div class="overlap-group">
+          <p id ="Text1" >Create Blog Post</pp>
+          
+          <div class="overlap">
+            <a href="#" onclick="redirectBack2ComBlog()">
+          
+            <img class="img" src="img/rectangle-226.png" />
+          </a>
+          </div>
+          <div class="div-wrapper">
+          <input type="text" id="nameInput" placeholder="Title"></div>
+          <div class="div"><div class="text-wrapper-2" ></div>
+          <input type="date" id="dobInput" ><p>Date of Birth</pp>  </div>
+          
+          <div class="overlap-2">
+            
+            
+            <div class="text-wrapper-3"></div>
+            <input type="text" id="usernameInput" placeholder="Username"></div>
+          
+          <div class="overlap-3"><div class="text-wrapper-4"></div>
+          
+          <input class="text" id="passwordInput" type="text" placeholder="Blog entry..." /></div>
+         
+          <div class="overlap-4"><div class="text-wrapper-5"><button id="createAccountButton" onclick="redirectToCommunityBlog()">Publish Blog</button></div></div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </body>
+</html>
