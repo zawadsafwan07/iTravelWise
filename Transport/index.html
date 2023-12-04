@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script>
+
+function toggleLocationText() {
+        var locationText = document.getElementById("loc");
+        if (locationText.style.display === "none") {
+            locationText.style.display = "block";
+        } else {
+            locationText.style.display = "none";
+        }
+    }
+      function notifyUser1(){
+        alert("The cost is $3.1!")
+      }
+      function notifyUser2(){
+        alert("The cost is $10.0!")
+      }
+      function notifyUser3(){
+        alert("The cost is $25.0!")
+      }
+      function notifyUser4(){
+        alert("The cost is $7.0!")
+      }
+      function go2overlay(){
+        window.open('../Overlay_App/index.html', 'SecondPage', 'width=310,height=314,top=200,left=480');
+      }
+
+      function go2pay(){
+        window.location.href = '../Proceed_to_Payment/index.html';
+      }
+
+      function go2loc(){
+        window.open('../Overlay_Location/index.html', 'SecondPage', 'width=300,height=230,top=200,left=450');
+      }
+
+      function redirectToPortal() {
+      window.location.href = '../Portal/index.html';
+      }
+      
+    </script>
+
+  </head>
+  <body>
+    <div class="transportation">
+      <div class="overlap-group-wrapper">
+        <div class="overlap-group">
+          <div class="rectangle"></div>
+          <img class="img" src="img/rectangle-302.jpg" />
+          <div class="title">Select Your Route</div>
+          
+          
+        
+          <div class="div">
+            <img class="group" src="img/group-686.png" />
+            <select id="numberDropdown" class="number-dropdown">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+
+              <!-- Add more options as needed -->
+            </select>
+          </div>
+          
+          <img class="rectangle-2" src="img/rectangle-227.svg" />
+
+          <div>
+            <a href="#" onclick="go2loc()">
+              <img class="rectangle-3" src="img/rectangle-229.png" alt="Clickable Image"/>
+            </a>
+          </div>
+          <a href="#" onclick="redirectToPortal()">
+          <img class="rectangle-4" src="img/rectangle-230.png" />
+        </a>
+          
+          <!-- <div class="group-2"></div> -->
+          <div class="vector-wrapper"><img class="vector-2" src="img/vector-1.svg" /></div>
+          <img class="compare-arrows" src="img/compare-arrows.svg" />
+          <img class="rectangle-6" id="loc" src="img/rectangle-240.png" Calgary, AB, CA/>
+          <div class="text-wrapper-4">
+            <label for="currentLocation">Current Location</label>
+            <input id="currentLocation" class="currentlocation" type="text" placeholder="Current Location" />
+          </div>
+        
+        
+          <div class="text-wrapper-5">
+            <label for="currentLocation"></label>
+            <input id="Destination" class="Destination" type="text" placeholder="Destination" />
+          </div>
+          <div class="rectangle-7"></div>
+          <div class="rectangle-8"></div>
+          <div class="rectangle-9"></div>
+          <p class="communauto-rent-a">Communauto | Rent a Car <br />Hourly Rate</p>
+          <div class="rectangle-10"></div>
+          <img class="rectangle-11" src="img/rectangle-16.png" />
+          <img class="rectangle-12" src="img/rectangle-280.png" />
+          <img class="rectangle-13" src="img/rectangle-281.png" />
+          <img class="rectangle-14" src="img/rectangle-282.png" />
+          <img class="rectangle-15" src="img/rectangle-283.png" />
+          <img class="rectangle-16" src="img/rectangle-285.png" />
+          <img class="rectangle-17" src="img/rectangle-285.png" />
+          <img class="rectangle-18" src="img/rectangle-286.png" />
+          <p class="bus-downtown-west">Bus 65 Downtown West<br />11:11 am - 11: 45am | Morley Trail</p>
+          <div class="rectangle-19"></div>
+          <div class="rectangle-20"></div>
+          <div class="rectangle-21"></div>
+          <div class="rectangle-22"></div>
+          <div class="text-wrapper-6">
+            <button id = "3.1" onclick = "go2pay() ">$3.1</button>
+          </div>
+          <div class="text-wrapper-7">
+            <button id = "10.00" onclick = "go2pay() ">$10.0</button>
+
+          </div>
+          <div class="text-wrapper-8">
+            <button id = "25.0" onclick = "go2pay() ">$25.0</button>
+
+          </div>
+          <div class="text-wrapper-9">
+            <button id = "7.0" onclick = "go2pay() ">$7.0</button>
+
+          </div>
+          <p class="book-an-uber">Book an Uber<br />11:07am - 11:18am</p>
+          <p class="book-a-lyft">Book a Lyft<br />11:19am - 11:32am</p>
+          <div>
+            <button onclick="go2overlay()">
+                <img class="rectangle-23" src="img/rectangle-320.png" alt="Clickable Image"/>
+            </button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

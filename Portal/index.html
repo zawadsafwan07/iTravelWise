@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      function Toevents() {
+        window.location.href = '../events/index.html';
+      }
+  
+      function ToFlight() {
+        window.location.href = '../Flights/index.html';
+      }
+  
+      function ToTransport() {
+        window.location.href = '../Transport/index.html';
+      }
+  
+      function ToCommunity() {
+        window.location.href = '../Community_Blog/index.html';
+      }
+
+      function ToSettings() {
+        window.location.href = '../Settings/index.html';
+      }
+
+      function ToHotels() {
+        window.location.href = '../Hotels/index.html';
+      }
+
+      function cancelAction_Transit() {
+        // Show confirmation dialog
+        var userConfirmed = window.confirm("Are you sure you want to Cancel your Transit?");
+        
+        if (userConfirmed) {
+          // If user clicked OK, hide the desired elements
+          hideElement('text-wrapper-8');
+          hideElement('cancel_transit'); // Assuming you have an element with the ID 'cancel_transit'
+          hideElement('on-it-transit-line'); // Assuming you have an element with the ID 'on-it-transit-line'
+        }
+      }
+
+      function cancelAction_Event() {
+        // Show confirmation dialog
+        var userConfirmed = window.confirm("Are you sure you want to Cancel your Transit?");
+        
+        if (userConfirmed) {
+          // If user clicked OK, hide the desired elements
+          hideElement('text-wrapper-11');
+          hideElement('cancel_event'); // Assuming you have an element with the ID 'cancel_transit'
+          hideElement('event_line'); // Assuming you have an element with the ID 'on-it-transit-line'
+        }
+      }
+
+      function cancelAction_Flight() {
+        // Show confirmation dialog
+        var userConfirmed = window.confirm("Are you sure you want to Cancel your Transit?");
+        
+        if (userConfirmed) {
+          // If user clicked OK, hide the desired elements
+          hideElement('text-wrapper-10');
+          hideElement('cancel_flight'); // Assuming you have an element with the ID 'cancel_transit'
+          hideElement('flight_line'); // Assuming you have an element with the ID 'on-it-transit-line'
+        }
+      }
+
+      function cancelAction_Hotel() {
+        // Show confirmation dialog
+        var userConfirmed = window.confirm("Are you sure you want to Cancel your Transit?");
+        
+        if (userConfirmed) {
+          // If user clicked OK, hide the desired elements
+          hideElement('text-wrapper-9');
+          hideElement('cancel_hotel'); // Assuming you have an element with the ID 'cancel_transit'
+          hideElement('hotel_line'); // Assuming you have an element with the ID 'on-it-transit-line'
+        }
+      }
+
+      function hideElement(elementId) {
+        var element = document.getElementById(elementId);
+        if (element) {
+          element.style.display = 'none';
+        }
+      }
+  
+  
+      
+    </script>
+  </head>
+  <body>
+    <div class="portal">
+      <div class="div">
+        <div class="overlap-group">
+          <img class="rectangle" src="img/rectangle-243.png" />
+          <img class="img" src="img/rectangle-302.jpg" />
+          <p class="taste-of-calgary-nov" id="event_line">
+            Taste of Calgary&nbsp;&nbsp;Nov 24<br />7:00pm&nbsp;&nbsp; Dining Hall, Calgary
+          </p>
+          <img class="rectangle-2" src="img/rectangle-8.png" />
+          <p id="on-it-transit-line" class="on-it-transit-nov">On-it Transit Nov 12<br />8:00am Crowfoot, Calgary</p>
+          <div class="text-wrapper">Booked Events</div>
+          <img class="rectangle-3" src="img/rectangle-10.png" />
+          <img class="rectangle-4" src="img/rectangle-12.png" />
+          <img class="rectangle-5" src="img/rectangle-310.png" />
+          <img class="rectangle-5" src="img/rectangle-310.png" />
+          <img class="rectangle-5" src="img/rectangle-310.png" />
+          <img class="rectangle-6" src="img/rectangle-16.png" />
+          <img class="rectangle-7" src="img/rectangle-18.png" />
+          <img class="rectangle-8"  src="img/rectangle-19.svg"/> 
+          <img class="rectangle-9" src="img/rectangle-20.png" />
+          <img class="rectangle-10" src="img/rectangle-21.png" />
+          <img class="rectangle-11" src="img/rectangle-22.svg" />
+          <img class="rectangle-12" src="img/rectangle-23.png" />
+          <div class="rectangle-14"></div>
+          <div class="rectangle-15"></div>
+          <div class="rectangle-16"></div>
+          <div class="rectangle-13"></div>
+          <div class="rectangle-17"></div>
+          <img class="rectangle-18" src="img/rectangle-293.png" />
+          <img class="rectangle-19" src="img/rectangle-9.png" />
+          <div class="rectangle-20"></div>
+          <div class="text-wrapper-2"><button id="Events" onclick="Toevents()">Events</button>
+            <p>Events</p></div>
+          <div class="text-wrapper-3"><button id="Transport" onclick="ToTransport()">Transport</button><p>Transport</p></div>
+          <div class="text-wrapper-4"><button id="Lodging" onclick="ToHotels()">Lodging</button><p>Lodging</p></div>
+          <div class="text-wrapper-5"><button id="Flights" onclick="ToFlight()">Flights</button><p>Flights</p></div>
+          <p class="germain-hotel-nov" id="hotel_line">Germain Hotel Nov 11<br />10:00am University , CA</p>
+         
+          <div class="text-wrapper-6"><button id="Blog" onclick="ToCommunity()">Blog</button><p>Blog</p></div>
+          <div class="text-wrapper-7"><button id="Settings" onclick="ToSettings()">Settings</button><p>Settings</p></div>
+         
+          
+          <div class="text-wrapper-8">Cancel <button  id ="cancel_transit" onclick="cancelAction_Transit()">Cancel</button> </div>
+          <div class="text-wrapper-9">Cancel <button  id ="cancel_hotel" onclick="cancelAction_Hotel()">Cancel</button></div>
+          <div class="text-wrapper-10">Cancel<button  id ="cancel_flight" onclick="cancelAction_Flight()">Cancel</button></div>
+          
+          <div class="text-wrapper-11">Cancel <button  id ="cancel_event" onclick="cancelAction_Event()">Cancel</button></div>
+          
+          <p class="air-canada-nov" id="flight_line">Air Canada Nov 10<br />5:25 pm Edmonton,Alberta</p>
+          
+        </div>
+        <div class="rectangle-21"></div>
+      </div>
+    </div>
+  </body>
+</html>
