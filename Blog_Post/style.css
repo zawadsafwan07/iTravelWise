@@ -1,0 +1,241 @@
+.create-accouint {
+  background-color: #ffefef;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.create-accouint .overlap-group-wrapper {
+  background-color: #ffefef;
+  width: 342px;
+  height: 568px;
+}
+
+.create-accouint .overlap-group {
+  position: relative;
+  height: 568px;
+  background-image: url(./img/rectangle-302.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.create-accouint .overlap {
+  position: absolute;
+  width: 342px;
+  height: 51px;
+  top: 517px;
+  left: 0;
+  background-image: url(./img/rectangle-223.svg);
+  background-size: 100% 100%;
+}
+
+.create-accouint .rectangle {
+  position: absolute;
+  width: 48px;
+  height: 49px;
+  top: 2px;
+  left: 260px;
+  background-color: #ffffff;
+}
+
+.create-accouint .img {
+  position: absolute;
+  width: 52px;
+  height: 41px;
+  top: 7px;
+  left: 8px;
+  object-fit: cover;
+}
+
+.create-accouint .div-wrapper {
+  position: absolute;
+  width: 150px;
+  height: 26px;
+  top: 150px;
+  left: 82px;
+}
+
+.text-wrapper-2 {
+  position: absolute;
+  top: 50px; /* Adjust the top position as needed */
+  left: 20px; /* Adjust the left position as needed */
+  /* You can also use right or bottom instead of left or top */
+}
+
+.create-accouint .text-wrapper {
+  position: absolute;
+  width: 127px;
+  top: 5px;
+  left: 6px;
+  font-family: "Acme", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.create-accouint .div {
+  position: absolute;
+  width: 150px;
+  height: 26px;
+  top: 327px;
+  left: 82px;
+
+}
+
+
+.create-accouint .overlap-2 {
+  position: absolute;
+  width: 150px;
+  height: 26px;
+  top: 291px;
+  left: 83px;
+}
+
+
+
+
+.create-accouint .overlap-3 {
+  position: absolute;
+  width: 150px;
+  height: 26px;
+  top: 254px;
+  left: 82px;
+  
+}
+
+
+
+.create-accouint .image {
+  position: absolute;
+  width: 219px;
+  height: 72px;
+  top: 57px;
+  left: 49px;
+  object-fit: cover;
+}
+
+.create-accouint .overlap-4 {
+  position: absolute;
+  width: 88px;
+  height: 31px;
+  top: 390px;
+  left: 114px;
+ 
+}
+
+
+.create-accouint .text-wrapper-6 {
+  position: absolute;
+  width: 159px;
+  top: 147px;
+  left: 79px;
+  font-family: "Acme", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.button {
+  width: 70px; /* Set the desired width */
+  height: 58px; /* Set the desired height */
+  font-size: 18px; /* Set the desired font size */
+}
+
+#nameInput {
+  width: 300px; /* Set the width of the input */
+  height: 30px; /* Set the height of the input */
+  position: absolute; /* Set the position property to absolute */
+  left: -50px; /* Set the left position */
+  top: -20px; /* Set the top position */
+  padding: 5px; /* Set padding inside the input */
+  font-size: 16px; /* Set the font size of the text inside the input */
+}
+
+#usernameInput {
+  width: 170px; /* Set the width of the input */
+  height: 30px; /* Set the height of the input */
+  position: absolute; /* Set the position property to absolute */
+  left: 0px; /* Set the left position */
+  top: 0px; /* Set the top position */
+  padding: 5px; /* Set padding inside the input */
+  font-size: 16px; /* Set the font size of the text inside the input */
+}
+
+#passwordInput {
+  width: 300px; /* Set the width of the input */
+  height: 200px; /* Set the height of the input */
+  position: absolute; /* Set the position property to absolute */
+  left: -50px; /* Set the left position */
+  top: -70px; /* Set the top position */
+  padding: 5px; /* Set padding inside the input */
+  font-size: 16px; /* Set the font size of the text inside the input */
+}
+
+
+#createAccountButton {
+  width: 170%; /* Make the button take the full width of the text wrapper */
+  height: 40px; /* Set the height of the input */
+  padding: 10px; /* Add padding for button size */
+  font-size: 16px; /* Set the font size of the button text */
+  position: absolute;
+  left: -27px; /* Set the left position of the button */
+  top: 25px; /* Set the top position of the button */
+}
+
+.overlap img {
+  width: 100%; /* Make the image take the full width of the container */
+  height: 100%; /* Make the image take the full height of the container */
+  object-fit: cover; /* Ensure the image covers the entire space */
+  /* Additional styles as needed */
+}
+
+
+/* Style for the button */
+.overlap button {
+  width: 80px; /* Make the button take the full width of the container */
+  height: 55px; /* Make the button take the full height of the container */
+  padding: 10px; /* Add padding for button size */
+  font-size: 16px; /* Set the font size of the button text */
+  position: absolute;
+  opacity: 0;
+  left: 0px; /* Set the left position of the button */
+  top: 0px; /* Set the top position of the button */
+  /* Additional styles as needed */
+}
+
+#dobInput{
+  width: 170px; /* Make the button take the full width of the container */
+  height: 30px; /* Make the button take the full height of the container */
+  
+  font-size: 16px; /* Set the font size of the button text */
+  position: absolute;
+  left: 0px; /* Set the left position of the button */
+  top: 17px; /* Set the top position of the button */
+  /* Additional styles as needed */
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  position: absolute;
+  left: 20px; /* Adjust the left position as needed */
+  top: 50px; /* Adjust the top position as needed */
+  width: 100px; /* Adjust the width as needed */
+}
+
+p {
+  color: white; /* Set the desired color */
+}
+
+#Text1 {
+  position: absolute;
+  left: 74px;
+  top: 77px;
+  color: white;
+  font-size: 30px;
+}
