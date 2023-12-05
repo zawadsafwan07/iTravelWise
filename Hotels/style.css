@@ -778,3 +778,101 @@
   mix-blend-mode: darken;
   object-fit: cover;
 }
+
+.hotels .hotel,
+.hotels .hotel-2 {
+  display: none; /* Initially hide the hotel divs */
+}
+
+#hotel_image {
+  display: none; /* Initially hide the hotel divs and the image */
+}
+
+#menu {
+  width: 40px; /* Set the desired width */
+  height: 39px; /* Set the desired height */
+  top: 520px; /* Set the desired top position */
+  left: 140px; /* Set the desired left position */
+  /* Additional styles, if needed */
+  position: absolute;
+}
+
+.positioned-div {
+  display: flex;
+  width: 270px;
+  height: 40px;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 10px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 2px solid;
+  border-color: #fdfafa;
+}
+
+.boxes {
+  display: flex;
+  width: 270px;
+  height: 40px;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 10px;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 2px solid;
+  border-color: #fdfafa;
+}
+
+.rooms {
+  display: flex;
+  width: 270px;
+  height: 40px;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 10px;
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 2px solid;
+  border-color: #fdfafa;
+}
+.people {
+  display: flex;
+  width: 270px;
+  height: 40px;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 10px;
+  position: absolute;
+  top: 150px;
+  left: 0px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 2px solid;
+  border-color: #fdfafa;
+}
+
+.content_search{
+  display: flex;
+  width: 270px;
+  height: 40px;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 10px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 2px solid;
+  border-color: #fdfafa;
+
+}
