@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script>
+      function searchHotels(){
+        document.getElementById('hotel').style.display = 'block';
+        document.getElementById('hotel-2').style.display = 'block';
+        document.getElementById('hotel_image').style.display = 'block';
+      }
+
+      function Payment(){
+        window.location.href = '../Proceed_to_Payment/index.html';
+      }
+
+      function redirectToOverlay() {
+        window.open('../Overlay_App/index.html', 'SecondPage', 'width=310,height=314,top=200,left=480');
+      }
+
+      function redirectToLocationOverlay() {
+        window.open('../Overlay_Location/index.html', 'SecondPage', 'width=300,height=244,top=200,left=450');
+      }
+
+      function redirectToPortal() {
+      window.location.href = '../Portal/index.html';
+      }
+
+
+    </script>
+  </head>
+  <body>
+    <div class="hotels">
+      <div class="overlap-wrapper">
+        <div class="overlap">
+          <img class="rectangle" src="img/rectangle-302.jpg" />
+          <div class="search-bar">
+            
+            
+          </div>
+          <div class="data">
+            <div class="positioned-div"> 
+              <img class="img" src="img/vector.svg"/>
+              <label for="arrive-date">Check in</label>
+              <input id="arrive-date" class="choose-date" type="date" placeholder="Choose Date" />
+          </div>
+          <div class="boxes">
+            <img class="img" src="img/vector.svg"/>
+            <label for="choose-date">Check Out</label>
+            <input id="choose-date" class="choose-date" type="date" placeholder="Choose Date" /> 
+        </div>
+        <div class="rooms">
+          <img class="img" src="img/vector.svg" />
+          <label for="num-rooms">Number of Rooms</label>
+          <select id="num-rooms" class="num-rooms">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            
+          </select>
+        </div>
+
+        <div class="people">
+          <img class="img" src="img/vector.svg" />
+          <label for="num-rooms">Number of people</label>
+          <select id="num-rooms" class="num-rooms">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            
+          </select>
+        </div>
+     
+            <div class="overlap-group" style="display: none;">
+              <div class="div">
+                <div class="rectangle-2"></div>
+                <div class="rectangle-3"></div>
+                <div class="rectangle-4"></div>
+                <div class="rectangle-5"></div>
+                <div class="rectangle-6"></div>
+                <div class="calendar" style="display: none;">
+                  <div class="calendar-row">
+                    <div class="text-wrapper-2">1</div>
+                    <div class="text-wrapper-3">2</div>
+                    <div class="text-wrapper-4">3</div>
+                    <div class="text-wrapper-5">4</div>
+                  </div>
+                  <div class="navbar">
+                    <div class="text-wrapper-6">5</div>
+                    <div class="text-wrapper-7">6</div>
+                    <div class="text-wrapper-8">7</div>
+                    <div class="text-wrapper-9">8</div>
+                    <div class="text-wrapper-10">9</div>
+                    <div class="text-wrapper-11">10</div>
+                    <div class="text-wrapper-12">11</div>
+                  </div>
+                  <div class="navbar-2">
+                    <div class="text-wrapper-6">12</div>
+                    <div class="text-wrapper-7">13</div>
+                    <div class="text-wrapper-13">14</div>
+                    <div class="text-wrapper-14">15</div>
+                    <div class="text-wrapper-15">16</div>
+                    <div class="text-wrapper-16">17</div>
+                    <div class="text-wrapper-17">18</div>
+                  </div>
+                  <div class="navbar-3">
+                    <div class="text-wrapper-18">19</div>
+                    <div class="text-wrapper-19">20</div>
+                    <div class="text-wrapper-20">21</div>
+                    <div class="text-wrapper-14">22</div>
+                    <div class="text-wrapper-15">23</div>
+                    <div class="text-wrapper-16">24</div>
+                    <div class="text-wrapper-17">25</div>
+                  </div>
+                  <div class="navbar-4">
+                    <div class="text-wrapper-18">26</div>
+                    <div class="text-wrapper-19">27</div>
+                    <div class="text-wrapper-20">28</div>
+                    <div class="text-wrapper-14">29</div>
+                    <div class="text-wrapper-21">30</div>
+                    <div class="text-wrapper-11">31</div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-wrapper-22">October</div>
+            </div>
+          </div>
+          <img class="img" src="img/rectangle-223.svg" />
+          <a href="#" onclick="redirectToLocationOverlay()">
+          <img class="rectangle-7" src="img/rectangle-225.png" /></a>
+          <a href="#" onclick="redirectToOverlay()">
+          <img class="rectangle-64" id="menu" src="img/rectangle-320.png" /></a>
+          <a href="#" onclick="redirectToPortal()">
+          <img class="rectangle-8" src="img/rectangle-226.png" />
+          </a>
+          
+          
+          
+          <div class="hotel" id =hotel>
+            <img class="image" src="img/image-1.png" />
+            <div class="overlap-2">
+              <div class="text-wrapper-24">Westin</div>
+              <div class="text-wrapper-25">$79 / night</div>
+              <img class="image-2" src="img/image-2-1.png" />
+              <div class="text-wrapper-26">(75) reviews</div>
+              <div class="more-info">more info &gt;</div>
+            </div>
+            
+            <div class="overlap-3">
+              <div class="rectangle-10"></div>
+              <a href="#" onclick="Payment()"><div class="book">Book&nbsp;&nbsp;&nbsp;&nbsp;&gt;</div></a>
+            </div> 
+          </div>
+          <div class="hotel-2" id="hotel-2">
+            <div class="overlap-2">
+              <div class="westin">Hotel California</div>
+              <div class="text-wrapper-25">$59 / night</div>
+              <img class="image-2" src="img/image-2-1.png" />
+              <div class="text-wrapper-26">(84) reviews</div>
+              <div class="more-info">more info &gt;</div>
+            </div>
+            <div class="overlap-3">
+              <div class="rectangle-10"></div>
+              <a href="#" onclick="Payment()">
+              <div class="book">Book&nbsp;&nbsp;&nbsp;&nbsp;&gt;</div></a>
+            </div>
+          </div>
+          <img class="image-3" id ="hotel_image" src="img/image-3.png" />
+          <div class="search-bar">
+            <div class="content_search">
+              
+              <input type="text" placeholder="Search Hotels" class="search-input" />
+              <button class="search-button" onclick="searchHotels()">Search</button>
+            </div>
+            <div class="cancel"></div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
