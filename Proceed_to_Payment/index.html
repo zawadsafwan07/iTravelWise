@@ -4,19 +4,51 @@
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="styleguide.css" />
     <link rel="stylesheet" href="style.css" />
+    <script>
+    
+    function Addcard() {
+        window.location.href = '../Add_Card/index.html';
+      }
+
+    function goBack() {
+      window.history.back();
+      }
+
+      function LocationOverlay() {
+     window.open('../Overlay_Location/index.html', 'SecondPage', 'width=300,height=244,top=200,left=450');
+   
+   }
+
+   function confirmPayment() {
+     window.open('../Overlay_ConfirmPayment/index.html', 'SecondPage', 'width=300,height=244,top=200,left=450');
+   
+   }
+    
+    
+    </script>
   </head>
   <body>
     <div class="proceed-to-payment">
       <div class="div">
         <div class="overlap">
-          <img class="rectangle" src="img/rectangle-312.png" />
+          <img class="rectangle" src="img/rectangle-302.jpg" />
           <div class="headline">Payment</div>
+          <a href="#" onclick="confirmPayment()">
           <div class="buttons"><div class="button"></div></div>
+          </a>
+          <a href="#" onclick="Addcard()">
           <div class="buttons-2"></div>
+          </a>
+          <a href="#" onclick="confirmPayment()">
           <div class="text-wrapper">Confirm Payment</div>
+        </a>
           <img class="img" src="img/rectangle-227.svg" />
+          <a href="#" onclick="LocationOverlay()">
           <img class="rectangle-2" src="img/rectangle-229.png" />
+        </a>
+          <a href="#" onclick="goBack()">
           <img class="rectangle-3" src="img/rectangle-230.png" />
+        </a>
           <div class="master-card-simple">
             <div class="overlap-group">
               <div class="overlap-2">
@@ -41,7 +73,9 @@
               <img class="intersect" src="img/intersect.svg" />
             </div>
           </div>
+          <a href="#" onclick="Addcard()">
           <div class="text-wrapper-2">Add a new Card</div>
+        </a>
         </div>
         <div class="label-wrapper">
           <div class="label"><div class="label-2">Confirm payment</div></div>

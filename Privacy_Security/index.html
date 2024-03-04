@@ -4,29 +4,49 @@
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
+  <script>
+    function ToSettings() {
+      window.location.href = '../Settings/index.html';
+    }
+  </script>
   <body>
     <div class="privacy-and-safety">
       <div class="div">
+        <img class="backdrop" src="img/rectangle-302.jpg">
+
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+        <div class="header">Privacy and Passwords</div>
         <div class="overlap-group">
-          <div class="text-wrapper">Enter current password</div>
-          <img class="rectangle" src="img/rectangle-326.svg" />
-          <div class="text-wrapper-2">Re-Type new Password</div>
-          <div class="text-wrapper-3">Enter new Password</div>
-          <img class="img" src="img/rectangle-326.svg" />
-          <div class="overlap">
-            <img class="rectangle-2" src="img/rectangle-304.svg" />
-            <div class="text-wrapper-4">Cancel</div>
-            <img class="rectangle-3" src="img/rectangle-303.svg" />
-            <div class="text-wrapper-5">Done</div>
+          <div class="text-wrapper">Enter Current Password</div>
+          <div class="input-wrapper">
+            <input type="password"/>
           </div>
-          <img class="rectangle-4" src="img/rectangle-326.svg" />
         </div>
-        <img class="rectangle-5" src="img/rectangle-9.png" />
-        <img class="rectangle-6" src="img/rectangle-9.png" />
-        <div class="text-wrapper-6">Exp Date</div>
-        <img class="rectangle-7" src="img/rectangle-9.png" />
-        <div class="text-wrapper-7">CVC Code</div>
-        <img class="rectangle-8" src="img/rectangle-9.png" />
+        <div class="overlap">
+          <div class="text-wrapper">Enter New Password</div>
+          <div class="input-wrapper">
+            <input type="password"/>
+          </div>
+        </div>
+        <div class="overlap-2">
+          <div class="text-wrapper">Re-Enter New Password</div>
+          <div class="input-wrapper">
+            <input type="password" />
+          </div>
+        </div>
+        <a href="#" onclick="ToSettings()">
+        <div class="overlap-4">
+          <div class="text-wrapper-4">Save Changes</div>
+        </div>
+      </a>
+        <a href="#" onclick="ToSettings()">
+          <div class="overlap-5">
+            <div class="text-wrapper-5">Cancel</div>
+          </div>
+        </a>
       </div>
     </div>
   </body>

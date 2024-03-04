@@ -7,29 +7,120 @@
 }
 
 .privacy-and-safety .div {
-  background-color: #fffbfb;
   overflow: hidden;
   width: 320px;
   height: 568px;
+  position: absolute;
+}
+
+.privacy-and-safety .header {
+  position: absolute;
+  width: 187px;
+  top: 60px;
+  left: 20px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+/* The switch - the box around the slider */
+.switch {
   position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  top: 0;
+  left: 0;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 .privacy-and-safety .overlap-group {
   position: absolute;
   width: 320px;
   height: 568px;
-  top: 0;
-  left: 0;
-  background-image: url(./img/rectangle-325.png);
-  background-size: cover;
-  background-position: 50% 50%;
+  top: 180px;
+  left: 40px;
+}
+
+.privacy-and-safety .overlap {
+  position: absolute;
+  width: 290px;
+  height: 74px;
+  top: 240px;
+  left: 40px;
+}
+
+.privacy-and-safety .overlap-2 {
+  position: absolute;
+  width: 333px;
+  height: 74px;
+  top: 300px;
+  left: 40px;
 }
 
 .privacy-and-safety .text-wrapper {
   position: absolute;
   width: 264px;
-  top: 119px;
-  left: 5px;
+  top: 0px;
+  left: 0;
   font-family: "Inter", Helvetica;
   font-weight: 600;
   color: #ffffffd4;
@@ -38,90 +129,42 @@
   line-height: normal;
 }
 
-.privacy-and-safety .rectangle {
+.privacy-and-safety .overlap-4 {
   position: absolute;
-  width: 302px;
-  height: 46px;
-  top: 153px;
-  left: 5px;
+  background-color: rgb(111, 250, 111);
+  width: 200px;
+  height: 50px;
+  top: 390px;
+  left: 60px;
 }
 
-.privacy-and-safety .text-wrapper-2 {
+.privacy-and-safety .overlap-5 {
   position: absolute;
-  width: 236px;
-  top: 308px;
-  left: 10px;
-  font-family: "Inter", Helvetica;
-  font-weight: 600;
-  color: #ffffff;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.privacy-and-safety .text-wrapper-3 {
-  position: absolute;
-  width: 297px;
-  top: 214px;
-  left: 10px;
-  font-family: "Inter", Helvetica;
-  font-weight: 600;
-  color: #ffffff;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.privacy-and-safety .img {
-  position: absolute;
-  width: 302px;
-  height: 46px;
-  top: 253px;
-  left: 5px;
-}
-
-.privacy-and-safety .overlap {
-  position: absolute;
-  width: 296px;
-  height: 63px;
-  top: 468px;
-  left: 11px;
-}
-
-.privacy-and-safety .rectangle-2 {
-  position: absolute;
-  width: 139px;
-  height: 63px;
-  top: 0;
-  left: 157px;
+  background-color: red;
+  width: 200px;
+  height: 50px;
+  top: 475px;
+  left: 60px;
 }
 
 .privacy-and-safety .text-wrapper-4 {
   position: absolute;
-  top: 5px;
-  left: 168px;
+  top: 8px;
+  left: 12px;
   font-family: "Inter", Helvetica;
   font-weight: 600;
   color: #ffffff;
-  font-size: 35px;
+  font-size: 25px;
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
 }
 
-.privacy-and-safety .rectangle-3 {
-  position: absolute;
-  width: 144px;
-  height: 63px;
-  top: 0;
-  left: 0;
-}
-
 .privacy-and-safety .text-wrapper-5 {
   position: absolute;
   width: 187px;
-  top: 8px;
-  left: 27px;
+  top: 5px;
+  left: 45px;
   font-family: "Inter", Helvetica;
   font-weight: 700;
   color: #ffffff;
@@ -131,70 +174,26 @@
   white-space: nowrap;
 }
 
-.privacy-and-safety .rectangle-4 {
+.privacy-and-safety .input-wrapper{
   position: absolute;
-  width: 302px;
-  height: 46px;
-  top: 347px;
-  left: 5px;
-}
-
-.privacy-and-safety .rectangle-5 {
-  position: absolute;
-  width: 84px;
-  height: 63px;
-  top: -59px;
-  left: -1845px;
-  object-fit: cover;
-}
-
-.privacy-and-safety .rectangle-6 {
-  position: absolute;
-  width: 84px;
-  height: 63px;
-  top: -59px;
-  left: -1961px;
-  object-fit: cover;
-}
-
-.privacy-and-safety .text-wrapper-6 {
-  position: absolute;
-  width: 90px;
-  top: 658px;
-  left: 312px;
-  font-family: "Inter", Helvetica;
-  font-weight: 600;
-  color: #000000;
-  font-size: 28px;
+  width: 79px;
+  height: 25px;
+  top: 30px;
+  left: 30px;
+  background-color: transparent;
+  font-family: "Acme", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
   letter-spacing: 0;
   line-height: normal;
+  border: 0;
+  padding: 0;
 }
 
-.privacy-and-safety .rectangle-7 {
-  position: absolute;
-  width: 146px;
-  height: 61px;
-  top: 346px;
-  left: -2076px;
-}
-
-.privacy-and-safety .text-wrapper-7 {
-  position: absolute;
-  width: 110px;
-  top: 659px;
-  left: 499px;
-  font-family: "Inter", Helvetica;
-  font-weight: 600;
-  color: #000000;
-  font-size: 28px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.privacy-and-safety .rectangle-8 {
-  position: absolute;
-  width: 143px;
-  height: 61px;
-  top: 346px;
-  left: -1898px;
+.backdrop {
+  width: 100%; /* Make the image take the full width of the container */
+  height: 100%; /* Make the image take the full height of the container */
+  object-fit: cover; /* Ensure the image covers the entire space */
+  /* Additional styles as needed */
 }

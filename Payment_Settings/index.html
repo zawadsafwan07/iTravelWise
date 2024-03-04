@@ -4,17 +4,47 @@
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="styleguide.css" />
     <link rel="stylesheet" href="style.css" />
+    <script>
+    
+    function Addcard() {
+        window.location.href = '../Add_Card/index.html';
+      }
+
+    function goBack() {
+      window.location.href = '../Settings/index.html';
+      }
+
+      function LocationOverlay() {
+     window.open('../Overlay_Location/index.html', 'SecondPage', 'width=300,height=244,top=200,left=450');
+   
+   }
+
+   function confirmPayment() {
+     window.open('../Overlay_ConfirmPayment/index.html', 'SecondPage', 'width=300,height=244,top=200,left=450');
+   
+   }
+  
+    
+    </script>
   </head>
   <body>
-    <div class="payments-settings">
+    <div class="proceed-to-payment">
       <div class="div">
         <div class="overlap">
-          <img class="rectangle" src="img/rectangle-312.png" />
+          <img class="rectangle" src="img/rectangle-302.jpg" />
           <div class="headline">Payment</div>
-          <div class="buttons"></div>
+         
+          <a href="#" onclick="Addcard()">
+          <div class="buttons-2"></div>
+          </a>
+         
           <img class="img" src="img/rectangle-227.svg" />
+          <a href="#" onclick="LocationOverlay()">
           <img class="rectangle-2" src="img/rectangle-229.png" />
+        </a>
+          <a href="#" onclick="goBack()">
           <img class="rectangle-3" src="img/rectangle-230.png" />
+        </a>
           <div class="master-card-simple">
             <div class="overlap-group">
               <div class="overlap-2">
@@ -25,7 +55,7 @@
                   <div class="overlap-group-2">
                     <div class="ellipse"></div>
                     <div class="ellipse-2"></div>
-                    <img class="intersect" src="img/intersect.svg" />
+                    <img class="intersect" src="img/intersect-1.svg" />
                   </div>
                 </div>
               </div>
@@ -39,18 +69,11 @@
               <img class="intersect" src="img/intersect.svg" />
             </div>
           </div>
-          <div class="text-wrapper">Add a new Card</div>
-          <div class="text-wrapper-2">Cardholder name</div>
-          <div class="text-wrapper-2">Cardholder name</div>
+          <a href="#" onclick="Addcard()">
+          <div class="text-wrapper-2">Add a new Card</div>
+        </a>
         </div>
-        <div class="label-wrapper">
-          <div class="label"><div class="label-2">Confirm payment</div></div>
-        </div>
-        <div class="text-wrapper-3">Exp Date</div>
-        <img class="rectangle-4" src="img/rectangle-7.png" />
-        <div class="text-wrapper-4">CVC Code</div>
-        <img class="rectangle-5" src="img/rectangle-7.png" />
-        <img class="rectangle-6" src="img/rectangle-7.png" />
+       
       </div>
     </div>
   </body>

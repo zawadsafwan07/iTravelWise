@@ -4,60 +4,128 @@
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="styleguide.css" />
     <link rel="stylesheet" href="style.css" />
+    <script>
+    function ToManageAccounts() {
+      window.location.href = '../Manage_Account/index.html';
+    }
+
+    function ToPrivacy() {
+      window.location.href = '../Privacy_Security/index.html';
+    }
+
+    function ToSetupEmergency() {
+      window.location.href = '../Setup_Emergency/index.html';
+    }
+
+    function ToPaymentSettings() {
+      window.location.href = '../Payment_Settings/index.html';
+    }
+
+    function ToAddFriends() {
+      window.location.href = '../Add_Friends/index.html';
+    }
+
+    function ToFAQ() {
+      window.location.href = '../FAQ/index.html';
+    }
+
+    function ToAddTravelDocs() {
+      window.location.href = '../Add_Travel_Docs/index.html';
+    }
+
+    function LocationOverlay() {
+      window.open('../Overlay_Location/index.html', 'SecondPage', 'width=300,height=244,top=200,left=450');
+    }
+
+    function redirectToPortal() {
+      window.location.href = '../Portal/index.html';
+    }
+    
+    function ToLogout() {
+      window.location.href = '../login_screen/index.html';
+    }
+  </script>
+
   </head>
   <body>
     <div class="settings">
       <div class="div">
+        <img class="backdrop" src="img/rectangle-302.jpg">
         <div class="overlap">
-          <img class="rectangle" src="img/rectangle-227.svg" />
-          <img class="img" src="img/rectangle-229.png" />
-          <img class="rectangle-2" src="img/rectangle-230.png" />
-          <img class="ellipse" src="img/ellipse-7.png" />
+          <a href="#" onclick="LocationOverlay()">
+            <img class="img" src="img/rectangle-229.png" />
+          </a>
+          <a href="#" onclick="redirectToPortal()">
+            <img class="rectangle-2" src="img/rectangle-230.png" />
+          </a>
+          <div class="headline"> <button id="logoutButton" class="logout_button" onclick="ToLogout()">Log Out</button></div>
         </div>
         <div class="name">
-          <img class="arrow" src="img/arrow.png" />
           <img class="ellipse-2" src="img/ellipse-6.png" />
           <div class="muted"><div class="subtitle">johnsmith@gmail.com</div></div>
           <div class="title">John Smith</div>
         </div>
         <div class="div-2">
           <div class="overlap-group">
-            <div class="background"></div>
-            <div class="text-wrapper">Manage my account</div>
-            <img class="left-arrow-icon" src="img/left-arrow-icon-5.svg" />
-            <img class="account-stroke-icon" src="img/account-stroke-icon.svg" />
+            <div class="background"></div>  
             <div class="headline">Settings</div>
           </div>
-          <div class="overlap-2">
-            <img class="background-2" src="img/background.svg" />
-            <div class="text-wrapper-2">Privacy and safety</div>
-            <img class="left-arrow-icon-2" src="img/left-arrow-icon-4.svg" />
-            <img class="lock-stroke-icon" src="img/lock-stroke-icon.svg" />
-          </div>
-          <div class="overlap-group-2">
-            <div class="background-3"></div>
-            <div class="text-wrapper-3">Setup Emergency Contact</div>
-            <img class="left-arrow-icon-2" src="img/left-arrow-icon-3.svg" />
-            <img class="camera-stroke-icon" src="img/camera-stroke-icon.svg" />
-          </div>
-          <div class="overlap-3">
-            <div class="background-3"></div>
-            <div class="text-wrapper-4">Payments</div>
-            <img class="left-arrow-icon-2" src="img/left-arrow-icon-2.svg" />
-            <img class="wallet-stroke-icon" src="img/wallet-stroke-icon.svg" />
-          </div>
-          <div class="overlap-4">
-            <div class="background-3"></div>
-            <div class="text-wrapper-5">Share Itenary With Friends</div>
-            <img class="left-arrow-icon-2" src="img/left-arrow-icon-1.svg" />
-            <img class="share-icon" src="img/share-icon.svg" />
-          </div>
-          <div class="overlap-5">
-            <div class="background-4"></div>
-            <div class="text-wrapper-6">Add Travel Documents</div>
-            <img class="left-arrow-icon-2" src="img/left-arrow-icon.svg" />
-            <img class="QR-code-icon" src="img/qr-code-icon.svg" />
-          </div>
+          <a href="#" onclick="ToManageAccounts()">
+            <div class="overlap-group-1">
+              <div class="background-2"></div>
+              <div class="text-wrapper">Manage my account</div>
+              <img class="left-arrow-icon" src="img/left-arrow-icon-5.svg" />
+              <img class="setting-icon" src="img/account-stroke-icon.svg" />
+            </div>
+          </a>
+          <a href="#" onclick="ToPrivacy()">
+            <div class="overlap-2">
+              <div class="background-2"></div>
+              <div class="text-wrapper">Privacy and safety</div>
+              <img class="left-arrow-icon" src="img/left-arrow-icon-4.svg" />
+              <img class="setting-icon" src="img/lock-stroke-icon.svg" />
+            </div>
+          </a>
+          <a href="#" onclick="ToSetupEmergency()">
+            <div class="overlap-group-2">
+              <div class="background-2"></div>
+              <div class="text-wrapper">Setup Emergency Contact</div>
+              <img class="left-arrow-icon" src="img/left-arrow-icon-3.svg" />
+              <img class="setting-icon" src="img/camera-stroke-icon.svg" />
+            </div>
+          </a>
+          <a href="#" onclick="ToPaymentSettings()">
+            <div class="overlap-3">
+              <div class="background-2"></div>
+              <div class="text-wrapper">Payments</div>
+              <img class="left-arrow-icon" src="img/left-arrow-icon-2.svg" />
+              <img class="setting-icon" src="img/wallet-stroke-icon.svg" />
+            </div>
+          </a>
+          <a href="#" onclick="ToAddFriends()">
+            <div class="overlap-4">
+              <div class="background-2"></div>
+              <div class="text-wrapper">Share Itinerary With Friends</div>
+              <img class="left-arrow-icon" src="img/left-arrow-icon-1.svg" />
+              <img class="setting-icon" src="img/share-icon.svg" />
+            </div>
+          </a>
+          <a href="#" onclick="ToFAQ()">
+            <div class="overlap-5">
+              <div class="background-2"></div>
+              <div class="text-wrapper">Frequently Asked Questions</div>
+              <img class="left-arrow-icon" src="img/left-arrow-icon-1.svg" />
+              <img class="setting-icon" src="img/Question_mark_(black).png" />
+            </div>
+          </a>
+          <a href="#" onclick="ToAddTravelDocs()">
+            <div class="overlap-6">
+              <div class="background-4"></div>
+              <div class="text-wrapper">Add Travel Documents</div>
+              <img class="left-arrow-icon" src="img/left-arrow-icon.svg" />
+              <img class="setting-icon" src="img/qr-code-icon.svg" />
+            </div>
+          </a>
         </div>
       </div>
     </div>
