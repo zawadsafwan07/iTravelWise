@@ -15,7 +15,7 @@
 .event-creation .overlap {
   position: relative;
   height: 568px;
-  background-image: url(./img/rectangle-317.png);
+  background-image: url(./img/rectangle-302.jpg);
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -853,9 +853,11 @@
 .event-creation .text-wrapper-9 {
   top: 6px;
   left: 32px;
+  width: 135px;
+  height: 31px;
   font-weight: 100;
   font-style: italic;
-  font-size: 15px;
+  font-size: 25px;
   position: absolute;
   font-family: "Inter", Helvetica;
   color: #000000;
@@ -912,7 +914,7 @@
 
 .event-creation .overlap-8 {
   position: absolute;
-  width: 307px;
+  width: 315px;
   height: 49px;
   top: 517px;
   left: 5px;
@@ -921,8 +923,8 @@
 .event-creation .img {
   position: absolute;
   width: 307px;
-  height: 46px;
-  top: 0;
+  height: 55px;
+  top: -10;
   left: 0;
 }
 
@@ -937,11 +939,10 @@
 
 .event-creation .rectangle-4 {
   position: absolute;
-  width: 41px;
-  height: 40px;
-  top: 5px;
+  width: 42px;
+  height: 42px;
+  top: 10px;
   left: 255px;
-  object-fit: cover;
 }
 
 .event-creation .rectangle-5 {
@@ -962,3 +963,17 @@
   mix-blend-mode: hard-light;
   object-fit: cover;
 }
+
+.finalize-event-button{
+  opacity: 0;
+
+}
+
+
+.location_symbol {
+  position: absolute;
+  top: 30px; /* Adjust the top position according to your preference */
+  left: 10px; 
+  height: 10px;
+}
+

@@ -4,29 +4,50 @@
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
+  <script>
+    function ToPAymentSettings() {
+      window.location.href = '../Payment_Settings/index.html';
+    }
+  </script>
   <body>
     <div class="add-card">
       <div class="div">
+        <img class="backdrop" src="img/rectangle-302.jpg">
+        <div class="header">Add Card</div>
         <div class="overlap-group">
-          <img class="rectangle" src="img/rectangle-325.png" />
-          <div class="text-wrapper">Cardholder name</div>
-          <img class="img" src="img/rectangle-7.svg" />
-          <div class="text-wrapper-2">Exp Date</div>
-          <img class="rectangle-2" src="img/rectangle-328.svg" />
-          <div class="text-wrapper-3">CVC Code</div>
-          <img class="rectangle-3" src="img/rectangle-329.svg" />
-          <div class="text-wrapper-4">Card number</div>
-          <img class="rectangle-4" src="img/rectangle-7.svg" />
-          <img class="rectangle-5" src="img/rectangle-330.png" />
-          <div class="rectangle-6"></div>
-          <div class="text-wrapper-5">Cancel</div>
+          <div class="text-wrapper">Cardholder Name</div>
+          <div class="input-wrapper">
+            <input type="text" />
+          </div>
         </div>
-        <img class="rectangle-7" src="img/rectangle-4.png" />
-        <img class="rectangle-8" src="img/rectangle-9.png" />
-        <div class="text-wrapper-6">Exp Date</div>
-        <img class="rectangle-9" src="img/rectangle-9.png" />
-        <div class="text-wrapper-7">CVC Code</div>
-        <img class="rectangle-10" src="img/rectangle-9.png" />
+        <div class="overlap">
+          <div class="text-wrapper">Card Number</div>
+          <div class="input-wrapper">
+            <input type="text"/>
+          </div>
+        </div>
+        <div class="overlap-2">
+          <div class="text-wrapper">Exp Date</div>
+          <div class="input-wrapper">
+            <input type="text"/>
+          </div>
+        </div>
+        <div class="overlap-3">
+          <div class="text-wrapper">CVC Code</div>
+          <div class="input-wrapper">
+            <input type="text"/>
+          </div>
+        </div>
+        <a href="#" onclick="ToPAymentSettings()">
+        <div class="overlap-4">
+          <div class="text-wrapper-4">Add</div>
+        </div>
+      </a>
+        <a href="#" onclick="ToPAymentSettings()">
+          <div class="overlap-5">
+            <div class="text-wrapper-5">Cancel</div>
+          </div>
+        </a>
       </div>
     </div>
   </body>

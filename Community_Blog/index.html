@@ -3,27 +3,74 @@
   <head>
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="style.css" />
+    <script>
+
+      function go2overlay(){
+        window.open('../Overlay_App/index.html', 'SecondPage', 'width=310,height=314,top=200,left=480');      
+      }
+      function go2loc(){
+        window.open('../Overlay_Location/index.html', 'SecondPage', 'width=300,height=230,top=200,left=450');
+      }
+      function redirectToPortal() {
+      window.location.href = '../Portal/index.html';
+      }
+
+      function redirect2Blog() {
+        window.location.href = '../Blog_Post/index.html';
+      }
+      
+    </script>
+     <style>
+      /* Add this style for the big button */
+      .big-button {
+        position: absolute;
+        top: 48%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #3498db; /* Customize the background color */
+        color: #fff; /* Customize the text color */
+        padding: 15px 30px; /* Adjust padding as needed */
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
     <div class="community-blog">
       <div class="overlap-group">
-        <img class="rectangle" src="img/rectangle-316.png" />
+        <img class="rectangle" src="img/rectangle-302.jpg" />
         <img class="image" src="img/image-7.png" />
         <p class="text-wrapper">Top Blogs in your area:</p>
-        <img class="img" src="img/image-8.png" />
         <p class="div">John Smith - 55 ratings</p>
         <img class="image-2" src="img/image-9.png" />
         <img class="image-3" src="img/image-11.png" />
-        <div class="text-wrapper-2">Browse categories</div>
-        <div class="text-wrapper-3">Outdoors</div>
-        <div class="text-wrapper-4">Food</div>
-        <div class="text-wrapper-5">Entertainment</div>
-        <div class="text-wrapper-6">CHICAGO TRAVEL GUIDE</div>
+
+        
+        <div class="image-8">
+          <label for="event-category" class="text-wrapper-10"></label>
+          <select id="event-category" class="event-category-dropdown">
+            <option value="music"></option>
+            <option value="music">Music</option>
+            <option value="sports">Sports</option>
+            <option value="technology">Technology</option>
+            <option value="food">Food</option>
+            <option value="arts">Arts</option>
+            <!-- Add more categories as needed -->
+          </select>
+        </div>
         <img class="image-4" src="img/image-12.png" />
         <img class="rectangle-2" src="img/rectangle-223.svg" />
         <div class="rectangle-3"></div>
+        <a href="#" onclick="go2loc()">
         <img class="rectangle-4" src="img/rectangle-225.png" />
+      </a>
+
+        <a href="#" onclick="redirectToPortal()()">
         <img class="rectangle-5" src="img/rectangle-226.png" />
+      </a>
+        <div class="chicago-best">Chicago&#39;s Best Outdoor Patios</div>
         <p class="chicago-the-windy">
           <span class="span"
             >Chicago, the &#34;Windy City,&#34; thrives in the summer after tough winters. It offers green spaces,
@@ -37,6 +84,7 @@
           <span class="text-wrapper-7">ratings</span>
           <span class="span">)</span>
         </p>
+
         <div class="chicago-s-best">Chicago&#39;s Best Outdoor Patios</div>
         <p class="chicago-embraces">
           <span class="span"
@@ -51,12 +99,32 @@
         </p>
         <img class="image-5" src="img/image-14.png" />
         <img class="image-6" src="img/image-14.png" />
-        <div class="text-wrapper-8">Search interests</div>
+        <div class="text-wrapper-8">
+          <input id="searchBlog" class="searchBlog" type="text" placeholder="Search interests" />
+
+        </div>
+        <style>
+          .text-wrapper-8 {
+            width: 300px; 
+            position: absolute;
+            top: -30px; /* Adjust the value to move it up or down */
+          }
+        
+          .searchBlog {
+            width: 100%;
+            height: 15px; /* Adjust the height as needed */
+            padding: 10px;
+            box-sizing: border-box;
+          }
+        </style>
         <div class="rectangle-6"></div>
         <img class="image-7" src="img/image-15.png" />
-        <img class="image-8" src="img/image-10.png" />
+        <a href="#" onclick="go2overlay()">
         <img class="rectangle-7" src="img/rectangle-320.png" />
+      </a>
+      <button class="big-button" onclick="redirect2Blog()">Create Blog</button>
       </div>
     </div>
+    
   </body>
 </html>

@@ -3,18 +3,126 @@
   <head>
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="style.css" />
+    <style>
+      .day-checkbox {
+        display: none;
+      }
+  
+      .day-label {
+        display: inline-block;
+        width: 30px;
+        text-align: center;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        margin: 2px;
+        padding: 2px;
+      }
+  
+      .day-checkbox:checked + .day-label,
+      .day-label:hover {
+        background-color: #ababab;
+      }
+
+      .event-time-input {
+        width: 135px; /* Adjust the width as needed */
+        height: 31px;
+        padding: 5px;
+        font-size: 16px;
+      }
+
+      .event-name-input {
+        width: 139px;
+        height: 31px;
+        padding: 5px;
+        font-size: 15px;
+      }
+
+      .location-name-input {
+        width: 145px;
+        height: 32px;
+        padding: 5px;
+        font-size: 14px;
+      }
+
+      .event-category-dropdown {
+        width: 145px;
+        height: 31px;
+        padding: 5px;
+        font-size: 16px;
+      }
+     
+
+
+
+    </style>
+
+    <script>
+      function ProceedToPayment() {
+        window.location.href = '../Proceed_to_Payment/index.html';
+      }
+
+      function redirectToPortal() {
+      window.location.href = '../events/index.html';
+      }
+
+      function redirectToOverlay() {
+        window.location.href = '../Overlay_App/index.html';
+      }
+
+      function redirectToLocationOverlay() {
+        window.open('../Overlay_Location/index.html', 'SecondPage', 'width=300,height=244,top=200,left=450');
+      }
+
+      function redirectToEventCreation() {
+        window.location.href = '../Create_Event/index.html';
+      }
+
+      function redirectToFinalizeEventOverlay() {
+        window.location.href = '../Overlay_Finalize_Event/index.html';
+      }
+
+      function redirectToCommunityBlog() {
+        window.location.href = '../Community_Blog/index.html';
+      }
+
+      function Event_Created(){
+        window.open('../Event_Created/index.html', 'SecondPage', 'width=300,height=244,top=200,left=450');
+      }
+
+      function clearAllFields() {
+        document.getElementById('event-name').value = '';
+        document.getElementById('location-name').value = '';
+        document.getElementById('event-time').value = '';
+        
+        // Clear calendar selection
+        var checkboxes = document.querySelectorAll('.day-checkbox');
+        checkboxes.forEach(function (checkbox) {
+          checkbox.checked = false;
+        });
+
+        // Reset category dropdown
+        var categoryDropdown = document.getElementById('event-category');
+        categoryDropdown.value = ''; // Set value to empty string
+        categoryDropdown.selectedIndex = 0; // Select the first option
+      }
+      
+
+    </script>
   </head>
   <body>
     <div class="event-creation">
       <div class="overlap-wrapper">
         <div class="overlap">
+          <img class="rectangle" src="img/rectangle-302.jpg" />
           <div class="calender">
-            <div class="rectangle"></div>
             <div class="text-wrapper">October</div>
             <div class="group">
               <div class="div">
                 <div class="overlap-group">
-                  <div class="day"><div class="element">1</div></div>
+                  <div class="day">
+                    <input type="checkbox" id="day" class="day-checkbox">
+                    <label for="day" class="day-label"><div class="element">1</div></label>
+                  </div>
                   <div class="div-wrapper"><div class="text-wrapper-2">Mon</div></div>
                   <div class="day-2"><div class="text-wrapper-2">Tue</div></div>
                   <div class="day-3"><div class="text-wrapper-2">Wed</div></div>
@@ -22,61 +130,204 @@
                   <div class="day-5"><div class="text-wrapper-2">Fri</div></div>
                   <div class="day-6"><div class="text-wrapper-2">Sat</div></div>
                   <div class="day-7"><div class="text-wrapper-3">Sun</div></div>
-                  <div class="element-wrapper"><div class="element">2</div></div>
-                  <div class="day-8"><div class="element-2">3</div></div>
-                  <div class="day-9"><div class="element-2">4</div></div>
-                  <div class="day-10"><div class="element">5</div></div>
-                  <div class="day-11"><div class="element-2">6</div></div>
-                  <div class="day-12"><div class="element-3">7</div></div>
+                  <div class="element-wrapper">
+                    <input type="checkbox" id="element-wrapper" class="day-checkbox">
+                    <label for="element-wrapper" class="day-label"><div class="element">2</div></label>
+                  </div>
+                  
+
+                  <div class="day-8">
+                    <input type="checkbox" id="day-8" class="day-checkbox">
+                    <label for="day-8" class="day-label"><div class="element-2">3</div></label>
+                    </div>
+                  <div class="day-9">
+                    <input type="checkbox" id="day-9" class="day-checkbox">
+                    <label for="day-9" class="day-label"><div class="element-2">4</div></label>
+                    </div>
+                  <div class="day-10">
+                    <input type="checkbox" id="day-10" class="day-checkbox">
+                    <label for="day-10" class="day-label"><div class="element">5</div></label>
+                  </div>
+                  <div class="day-11">
+                    <input type="checkbox" id="day-11" class="day-checkbox">
+                    <label for="day-11" class="day-label"><div class="element-2">6</div></label>
+                  </div>
+                  <div class="day-12">
+                    <input type="checkbox" id="day-12" class="day-checkbox">
+                    <label for="day-12" class="day-label"><div class="element-3">7</div></label>
+                  </div>
+                  <div class="day-13">
+                    <input type="checkbox" id="day-13" class="day-checkbox">
+                    <label for="day-13" class="day-label"><div class="element-2">8</div></label>
+                  </div>
+                  <div class="day-14">
+                    <input type="checkbox" id="day-14" class="day-checkbox">
+                    <label for="day-14" class="day-label"><div class="element-4">15</div></label>
+                  </div>
+                  <div class="day-15">
+                    <input type="checkbox" id="day-15" class="day-checkbox">
+                    <label for="day-15" class="day-label"><div class="element-5">22</div></label>
+                  </div>
                 </div>
-                <div class="day-13"><div class="element-2">8</div></div>
-                <div class="day-14"><div class="element-4">15</div></div>
-                <div class="day-15"><div class="element-5">22</div></div>
-                <div class="day-16"><div class="element-6">29</div></div>
-                <div class="day-17"><div class="element-2">9</div></div>
-                <div class="day-18"><div class="element-4">16</div></div>
-                <div class="day-19"><div class="element-7">23</div></div>
-                <div class="day-20"><div class="element-8">30</div></div>
-                <div class="day-21"><div class="element-9">31</div></div>
-                <div class="day-22"><div class="element-4">10</div></div>
-                <div class="day-23"><div class="element-4">17</div></div>
-                <div class="day-24"><div class="element-6">24</div></div>
-                <div class="day-25"><div class="element-7">11</div></div>
-                <div class="day-26"><div class="element-4">18</div></div>
-                <div class="day-27"><div class="element-5">25</div></div>
-                <div class="day-28"><div class="element-4">12</div></div>
-                <div class="day-29"><div class="element-4">19</div></div>
-                <div class="day-30"><div class="element-6">26</div></div>
-                <div class="day-31"><div class="element-10">13</div></div>
-                <div class="day-32"><div class="element-6">20</div></div>
-                <div class="day-33"><div class="element-5">27</div></div>
+                <div class="day-16">
+                  <input type="checkbox" id="day-16" class="day-checkbox">
+                  <label for="day-16" class="day-label"><div class="element-5">29</div></label>
+                </div>
+                <div class="day-17">
+                  <input type="checkbox" id="day-17" class="day-checkbox">
+                    <label for="day-17" class="day-label"><div class="element-2">9</div></label>
+                </div>
+                <div class="day-18">
+                  <input type="checkbox" id="day-18" class="day-checkbox">
+                    <label for="day-18" class="day-label"><div class="element-4">16</div></label>
+                </div>
+                <div class="day-19">
+                  <input type="checkbox" id="day-19" class="day-checkbox">
+                    <label for="day-19" class="day-label"><div class="element-7">23</div></label>
+                </div>
+                <div class="day-20">
+                  <input type="checkbox" id="day-20" class="day-checkbox">
+                    <label for="day-20" class="day-label"><div class="element-8">30</div></label>
+                </div>
+                <div class="day-21">
+                  <input type="checkbox" id="day-21" class="day-checkbox">
+                    <label for="day-21" class="day-label"><div class="element-9">31</div></label>
+                </div>
+                <div class="day-22">
+                  <input type="checkbox" id="day-22" class="day-checkbox">
+                    <label for="day-22" class="day-label"><div class="element-4">10</div></label>
+                </div>
+                <div class="day-23">
+                  <input type="checkbox" id="day-23" class="day-checkbox">
+                    <label for="day-23" class="day-label"><div class="element-4">17</div></label>
+                </div>
+                <div class="day-24">
+                  <input type="checkbox" id="day-24" class="day-checkbox">
+                    <label for="day-24" class="day-label"><div class="element-6">24</div></label>
+                </div>
+                <div class="day-25">
+                  <input type="checkbox" id="day-25" class="day-checkbox">
+                    <label for="day-25" class="day-label"><div class="element-7">11</div></label>
+                </div>
+                <div class="day-26">
+                  <input type="checkbox" id="day-26" class="day-checkbox">
+                    <label for="day-26" class="day-label"><div class="element-4">18</div></label>
+                </div>
+                <div class="day-27">
+                  <input type="checkbox" id="day-27" class="day-checkbox">
+                    <label for="day-27" class="day-label"><div class="element-5">25</div></label>
+                </div>
+                <div class="day-28">
+                  <input type="checkbox" id="day-28" class="day-checkbox">
+                    <label for="day-28" class="day-label"><div class="element-4">12</div></label>
+                </div>
+                <div class="day-29">
+                  <input type="checkbox" id="day-29" class="day-checkbox">
+                    <label for="day-29" class="day-label"><div class="element-4">19</div></label>
+                </div>
+                <div class="day-30">
+                  <input type="checkbox" id="day-30" class="day-checkbox">
+                    <label for="day-30" class="day-label"><div class="element-6">26</div></label>
+                </div>
+                <div class="day-31">
+                  <input type="checkbox" id="day-31" class="day-checkbox">
+                    <label for="day-31" class="day-label"><div class="element-10">13</div></label>
+                </div>
+                <div class="day-32">
+                  <input type="checkbox" id="day-32" class="day-checkbox">
+                    <label for="day-32" class="day-label"><div class="element-6">20</div></label>
+                </div>
+                <div class="day-33">
+                  <input type="checkbox" id="day-33" class="day-checkbox">
+                    <label for="day-33" class="day-label"><div class="element-5">27</div></label>
+                </div>
+
                 <div class="day-34">
-                  <p class="p"><span class="span">&nbsp;</span> <span class="text-wrapper-4">14</span></p>
+                  <input type="checkbox" id="day-12" class="day-checkbox">
+                  <label for="day-34" class="day-label"><div class="element-p">14</div></label>
+                </div>
+
+                <div class="day-34">
+                  <input type="checkbox" id="day-34" class="day-checkbox">
+                  <label for="day-34" class="day-label"><div class="text-wrapper-4">14</div></label>
+                  <p class="p"><span class="span">&nbsp;</span> <span class="p">14</span></p>
                 </div>
                 <div class="day-35">
-                  <p class="element-11"><span class="span">&nbsp;</span> <span class="text-wrapper-4">21</span></p>
+                  <input type="checkbox" id="day-35" class="day-checkbox">
+                  <label for="day-35" class="day-label"><div class="text-wrapper-4">21</div></label>
+                  <p class="element-11"><span class="span">&nbsp;</span> <span class="p">21</span></p>
                 </div>
-                <div class="day-36"><div class="element-12">28</div></div>
+                <div class="day-36">
+                  <input type="checkbox" id="day-36" class="day-checkbox">
+                  <label for="day-36" class="day-label"><div class="element-12">28</div></label>
+                </div>
               </div>
             </div>
           </div>
           <div class="overlap-2"><div class="text-wrapper-5">Event Creation</div></div>
-          <div class="overlap-3"><div class="text-wrapper-6">Event Name</div></div>
+          
+          <!-- Event Name input field -->
+          <div class="overlap-3">
+            <label for="event-name" class="text-wrapper-6"></label>
+            <input type="text" id="event-name" class="event-name-input" placeholder="Enter Event Name">
+          </div>
+
+          <!-- location Name input field -->
           <div class="overlap-4">
-            <div class="text-wrapper-7">Event Name</div>
-            <div class="rectangle-2"></div>
-            <div class="text-wrapper-8">Event Location</div>
+            <label for="location-name" class="text-wrapper-8"></label>
+            <input type="text" id="location-name" class="location-name-input" placeholder="Enter Event Location">
           </div>
-          <div class="overlap-5"><div class="text-wrapper-9">Event Time</div></div>
-          <div class="overlap-6"><div class="text-wrapper-10">Event Category</div></div>
-          <div class="overlap-7"><div class="text-wrapper-11">Finalize Event</div></div>
+          
+          <!-- Finalize Event button -->
+          <a href="#" onclick="Event_Created()">
+            <div class="overlap-7">
+                <div class="text-wrapper-11">Finalize Event</div>
+            </div>
+          </a>
+        
+          <!-- Modified "Event Time" input -->
+          <div class="overlap-5">
+            <input type="time" class="event-time-input" placeholder="Event Time">
+          </div>
+
+          <!-- Event Category dropdown -->
+          <div class="overlap-6">
+            <label for="event-category" class="text-wrapper-10"></label>
+            <select id="event-category" class="event-category-dropdown">
+              <option value="music"></option>
+              <option value="music">Music</option>
+              <option value="sports">Sports</option>
+              <option value="technology">Technology</option>
+              <option value="food">Food</option>
+              <option value="arts">Arts</option>
+              <!-- Add more categories as needed -->
+            </select>
+          </div>
           <div class="overlap-8">
-            <img class="img" src="img/rectangle-223.svg" />
-            <div class="rectangle-3"></div>
-            <img class="rectangle-4" src="img/rectangle-225.png" />
+            <img class="img" id="Navigation" src="img/rectangle-223.svg" />
+            
+            
+            
+            
+
             <img class="rectangle-5" src="img/rectangle-226.png" />
+
+            <button id="GoToPortal" onclick="redirectToPortal()">
+              <img class="rectangle-5" src="img/rectangle-226.png" alt="Go To Portal" />
+            </button>
+            <a href="#" onclick="redirectToLocationOverlay()">
+              <img class="rectangle-4" id ="location_sybmol" src="img/rectangle-225.png" />
+            </a>
           </div>
-          <img class="rectangle-6" src="img/rectangle-256.png" />
+
+          
+            <a href="#" onclick="clearAllFields()">
+            <img class="rectangle-6" src="img/rectangle-256.png" alt="Clear Fields" />
+            </a>
+
+           
+          
+          
         </div>
       </div>
     </div>
