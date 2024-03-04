@@ -1,7 +1,7 @@
 body {
   overflow: hidden;
 }
-.location-overlay {
+.friends-overlay {
   background-color: #f6feff;
   display: flex;
   flex-direction: row;
@@ -9,7 +9,7 @@ body {
   width: 100%;
 }
 
-.location-overlay .overlap-group-wrapper {
+.friends-overlay .overlap-group-wrapper {
   background-color: #f6feff;
   border: 1px solid;
   border-color: #000000;
@@ -17,7 +17,7 @@ body {
   height: 244px;
 }
 
-.location-overlay .overlap-group {
+.friends-overlay .overlap-group {
   position: relative;
   height: 244px;
   background-image: url(./img/rectangle-302.jpg);
@@ -25,7 +25,7 @@ body {
   background-position: 50% 50%;
 }
 
-.location-overlay .overlap {
+.friends-overlay .overlap {
   position: absolute;
   width: 109px;
   height: 85px;
@@ -33,7 +33,7 @@ body {
   left: 105px;
 }
 
-.location-overlay .rectangle {
+.friends-overlay .rectangle {
   position: absolute;
   width: 109px;
   height: 85px;
@@ -41,7 +41,7 @@ body {
   left: 0;
 }
 
-.location-overlay .text-wrapper {
+.friends-overlay .text-wrapper {
   position: absolute;
   width: 109px;
   top: 31px;
@@ -55,7 +55,7 @@ body {
   line-height: 22px;
 }
 
-.location-overlay .div {
+.friends-overlay .div {
   position: absolute;
   width: 274px;
   top: 34px;

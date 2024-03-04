@@ -3,6 +3,41 @@
   <head>
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="style.css" />
+
+    <script>
+      function Toevents() {
+        
+        window.open('../events/index.html', '_blank');
+      }
+  
+      function ToFlight() {
+        window.open('../Flights/index.html', '_blank');
+      }
+  
+      function ToTransport() {
+        
+        window.open('../Transport/index.html', '_blank');
+      }
+  
+      function ToCommunity() {
+        
+        window.open('../Community_Blog/index.html', '_blank');
+      }
+
+      function ToSettings() {
+        
+        window.open('../Settings/index.html', '_blank');
+      }
+
+      function ToHotels() {
+        
+        window.open('../Hotels/index.html', '_blank');
+      }
+      
+      function redirectToLogin() {
+        window.close();
+      }
+      </script>
   </head>
   <body>
     <div class="app-overlay">
@@ -12,24 +47,37 @@
           <div class="overlap">
             <div class="div">Transport</div>
             <div class="rectangle"></div>
-            <div class="rectangle-wrapper"><img class="img" src="img/rectangle-322.png" /></div>
+            <div class="rectangle-wrapper">
+            <a href="#" onclick="ToTransport()">
+            <img class="img" src="img/rectangle-322.png" /></div>
+          </a>
           </div>
           <div class="text-wrapper-2">Flights</div>
           <div class="overlap-2">
             <div class="text-wrapper-3">Lodging</div>
             <div class="rectangle-2"></div>
+            <a href="#" onclick="ToHotels()">
             <img class="rectangle-3" src="img/rectangle-23.png" />
+            </a>
           </div>
           <div class="overlap-3">
             <div class="div">Blog</div>
+            <a href="#" onclick="ToCommunity()">
             <img class="rectangle-4" src="img/rectangle-293.png" />
+            </a>
           </div>
           <div class="text-wrapper-4">Settings</div>
+          <a href="#" onclick="redirectToLogin()">
           <img class="rectangle-5" src="img/rectangle-318.png" />
+        </a>
+          <a href="#" onclick="ToFlight()">
           <img class="rectangle-6" src="img/rectangle-12.png" />
+          </a>
           <div class="div-wrapper"><p class="p">Select an Icon to Navigate</p></div>
-          <div class="img-wrapper"><img class="rectangle-7" src="img/rectangle-20.png" /></div>
+          <div class="img-wrapper"><a href="#" onclick="ToSettings()"><img class="rectangle-7" src="img/rectangle-20.png" /></a></div>
+          <a href="#" onclick="Toevents()">
           <img class="rectangle-8" src="img/rectangle-311.png" />
+          </a>
         </div>
       </div>
     </div>
