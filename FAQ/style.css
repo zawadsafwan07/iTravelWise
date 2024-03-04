@@ -1,0 +1,78 @@
+.faq {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.faq .div {
+  overflow: hidden;
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 320px;
+  height: 568px;
+  position: relative;
+}
+
+.faq .overlap {
+  position: absolute;
+  background-color: #ffffff;
+  width: 306px;
+  height: 40px;
+  top: 520px;
+  left: 7px;
+}
+
+.faq .img {
+  position: absolute;
+  width: 30px;
+  height: 33px;
+  top: 5px;
+  left: 265px;
+  object-fit: cover;
+}
+
+.faq .rectangle-2 {
+  position: absolute;
+  width: 52px;
+  height: 41px;
+  top: 0;
+  left: 3px;
+  object-fit: cover;
+}
+
+.faq .header {
+  position: absolute;
+  width: 187px;
+  top: 50px;
+  left: 15px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.faq .text {
+  position: absolute;
+  width: 295px;
+  top: 100px;
+  left: 15px;
+  font-family: "Inter", Helvetica;
+  text-wrap: wrap;
+  font-weight: 100;
+  color: #ffffff;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.backdrop {
+  width: 100%; /* Make the image take the full width of the container */
+  height: 100%; /* Make the image take the full height of the container */
+  object-fit: cover; /* Ensure the image covers the entire space */
+  /* Additional styles as needed */
+}

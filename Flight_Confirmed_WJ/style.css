@@ -1,0 +1,76 @@
+body {
+  overflow: hidden;
+}
+.location-overlay {
+  background-color: #f6feff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.location-overlay .overlap-group-wrapper {
+  background-color: #f6feff;
+  border: 1px solid;
+  border-color: #000000;
+  width: 320px;
+  height: 244px;
+}
+
+.location-overlay .overlap-group {
+  position: relative;
+  height: 244px;
+  background-image: url(./img/rectangle-302.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.location-overlay .overlap {
+  position: absolute;
+  width: 109px;
+  height: 85px;
+  top: 136px;
+  left: 105px;
+}
+
+.location-overlay .rectangle {
+  position: absolute;
+  width: 109px;
+  height: 85px;
+  top: 0;
+  left: 0;
+}
+
+.location-overlay .text-wrapper {
+  position: absolute;
+  width: 109px;
+  top: 31px;
+  left: 0;
+  font-family: "Poppins", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 35px;
+  text-align: center;
+  letter-spacing: -0.41px;
+  line-height: 22px;
+}
+
+.location-overlay .div {
+  position: absolute;
+  width: 274px;
+  top: 34px;
+  left: 23px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: -0.41px;
+  line-height: 22px;
+}
+.thank-you-message {
+  text-align: center;
+  font-size: 22px;
+  margin-top: 20px;
+  color: #f6feff;
+}

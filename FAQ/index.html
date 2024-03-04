@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+
+    function LocationOverlay() {
+      window.open('../Overlay_Location/index.html', 'SecondPage', 'width=300,height=244,top=200,left=450');
+    }
+
+    function ToSettings() {
+      window.location.href = '../Settings/index.html';
+    }
+
+    function redirectToPortal() {
+      window.location.href = '../Settings/index.html';
+    }
+  </script>
+
+  </head>
+  <body>
+    <div class="faq">
+      <div class="div">
+        <img class="backdrop" src="img/rectangle-302.jpg">
+        <div class="header">Frequently Asked Questions</div>
+        <div class="overlap">
+          <a href="#" onclick="LocationOverlay()">
+            <img class="img" src="img/rectangle-229.png" />
+          </a>
+          <a href="#" onclick="ToSettings()">
+            <img class="rectangle-2" src="img/rectangle-230.png" />
+          </a>
+        </div>
+        <div class="text">How do I return to the previous page?<br> Click the arrow icon at the bottom left of the page<br><br>
+        How do I share my location?<br> Click the map pin icon at the bottom right of the page<br><br>
+        How do I log out of my account?<br> Navigate to the settings page and click the red "Log out" button at the bottom of the page<br><br>
+        </div>
+        
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -6,6 +6,10 @@
   width: 100%;
 }
 
+.text-wrapper-6 {
+  color: white;
+  font-size: 20px;
+}
 .events .div {
   background-color: #000000;
   overflow: hidden;
@@ -33,14 +37,14 @@
 }
 
 .events .search-bar {
-  display: flex;
+  background-color: #f6feff;
   width: 352px;
-  height: 61px;
+  height: 40px;
   align-items: center;
-  gap: 8px;
+  gap: 0px;
   position: absolute;
-  top: 6px;
-  left: 16px;
+  top: 10px;
+  left: 0px;
 }
 
 .events .content {
@@ -125,6 +129,7 @@
   left: 19px;
   background-color: #fdfafa;
   border-radius: 10px;
+ 
 }
 
 .events .chasing-summer-nov {
@@ -145,6 +150,7 @@
   height: 28px;
   top: 135px;
   left: 245px;
+  
 }
 
 .events .rectangle-5 {
@@ -454,3 +460,4 @@
   letter-spacing: 0;
   line-height: normal;
 }
+

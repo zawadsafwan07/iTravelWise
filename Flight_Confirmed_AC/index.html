@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script>
+
+    function redirectToLogin() {
+        window.close();
+      }
+    
+    function ProceedToPayment() {
+        window.location.href = '../Proceed_to_Payment/index.html';
+      }
+
+    
+
+    </script>
+  </head>
+  <body>
+    <div class="location-overlay">
+      <div class="overlap-group-wrapper">
+        <div class="overlap-group">
+          <div class="overlap">
+            <a href="#" onclick="ProceedToPayment()">
+            <img class="rectangle" src="img/rectangle-303.svg" />
+            <div class="text-wrapper">Pay</div>
+          </a>
+          </div>
+
+          <p class="thank-you-message">Thank you for booking your flight with Air Canada.Please make your payment confirm your seats.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
