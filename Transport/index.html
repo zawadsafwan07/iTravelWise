@@ -4,37 +4,111 @@
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="styleguide.css" />
     <link rel="stylesheet" href="style.css" />
+
+    <script>
+
+function toggleLocationText() {
+        var locationText = document.getElementById("loc");
+        if (locationText.style.display === "none") {
+            locationText.style.display = "block";
+        } else {
+            locationText.style.display = "none";
+        }
+    }
+      function notifyUser1(){
+        alert("The cost is $3.1!")
+      }
+      function notifyUser2(){
+        alert("The cost is $10.0!")
+      }
+      function notifyUser3(){
+        alert("The cost is $25.0!")
+      }
+      function notifyUser4(){
+        alert("The cost is $7.0!")
+      }
+      function go2overlay(){
+        window.open('../Overlay_App/index.html', 'SecondPage', 'width=310,height=314,top=200,left=480');
+      }
+
+      function go2pay(){
+        window.location.href = '../Proceed_to_Payment/index.html';
+      }
+
+      function go2loc(){
+        window.open('../Overlay_Location/index.html', 'SecondPage', 'width=300,height=230,top=200,left=450');
+      }
+
+      function redirectToPortal() {
+      window.location.href = '../Portal/index.html';
+      }
+
+      function searchTransport() {
+  // Your existing code for searchFlights...
+
+  // Show the hidden rectangles
+  document.querySelectorAll('.rectangle,.text-wrapper-6, .book-an-uber,.book-a-lyft, .communauto-rent-a, .text-wrapper-8, .text-wrapper-9, .rectangle-2, .rectangle-3, .rectangle-7, .rectangle-8, .rectangle-9, .rectangle-10, .rectangle-11, .rectangle-12, .rectangle-13, .rectangle-14, .rectangle-15, .rectangle-16, .rectangle-17, .rectangle-18, .rectangle-19, .rectangle-20, .rectangle-21, .rectangle-22, .bus-downtown-west, .text-wrapper-7')
+    .forEach(rectangle => rectangle.style.display = 'block');
+}
+      
+    </script>
+
   </head>
   <body>
     <div class="transportation">
       <div class="overlap-group-wrapper">
         <div class="overlap-group">
           <div class="rectangle"></div>
-          <img class="img" src="img/rectangle-310.png" />
-          <div class="title">Select Your Route</div>
-          <div class="boxes">
-            <img class="vector" src="img/vector.svg" />
-            <div class="text-wrapper">Choose Data</div>
-          </div>
+          <img class="img" src="img/rectangle-302.jpg" />
+          <div class="title" id="title">Select Your Route</div>
+          
+          
+        
           <div class="div">
             <img class="group" src="img/group-686.png" />
-            <div class="text-wrapper-2">1</div>
+            <select id="numberDropdown" class="number-dropdown">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+
+              <!-- Add more options as needed -->
+            </select>
           </div>
+          
           <img class="rectangle-2" src="img/rectangle-227.svg" />
-          <img class="rectangle-3" src="img/rectangle-229.png" />
+
+          <div>
+            <a href="#" onclick="go2loc()">
+              <img class="rectangle-3" src="img/rectangle-229.png" alt="Clickable Image"/>
+            </a>
+          </div>
+          <a href="#" onclick="redirectToPortal()">
           <img class="rectangle-4" src="img/rectangle-230.png" />
-          <div class="rectangle-5"></div>
-          <div class="text-wrapper-3">Proceed To Payment</div>
-          <div class="group-2"></div>
+        </a>
+          
+          <!-- <div class="group-2"></div> -->
           <div class="vector-wrapper"><img class="vector-2" src="img/vector-1.svg" /></div>
-          <img class="compare-arrows" src="img/compare-arrows.svg" />
-          <img class="rectangle-6" src="img/rectangle-240.png" />
-          <div class="text-wrapper-4">Current Location</div>
-          <div class="text-wrapper-5">Destination</div>
-          <div class="rectangle-7"></div>
+          
+          
+          <div class="text-wrapper-4">
+            <label for="currentLocation">Current Location</label>
+            <input id="currentLocation" class="currentlocation" type="text" placeholder="Current Location" />
+          </div>
+        
+        
+          <div class="text-wrapper-5">
+            <label for="currentLocation"></label>
+            <input id="Destination" class="Destination" type="text" placeholder="Destination" />
+            <button class="search-button" id="search-button_size" onclick="searchTransport()">Search</button>
+          </div>
+          <div class="rectangle-7"> </div>
           <div class="rectangle-8"></div>
           <div class="rectangle-9"></div>
-          <p class="communauto-rent-a">Communauto | Rent a Car <br />Hourly Rate</p>
+          <p class="communauto-rent-a" style="display: none;">Communauto | Rent a Car <br />Hourly Rate</p>
           <div class="rectangle-10"></div>
           <img class="rectangle-11" src="img/rectangle-16.png" />
           <img class="rectangle-12" src="img/rectangle-280.png" />
@@ -44,18 +118,33 @@
           <img class="rectangle-16" src="img/rectangle-285.png" />
           <img class="rectangle-17" src="img/rectangle-285.png" />
           <img class="rectangle-18" src="img/rectangle-286.png" />
-          <p class="bus-downtown-west">Bus 65 Downtown West<br />11:11 am - 11: 45am | Morley Trail</p>
+          <p class="bus-downtown-west" style="display: none;">Bus 65 Downtown West<br />11:11 am - 11: 45am | Morley Trail</p>
           <div class="rectangle-19"></div>
           <div class="rectangle-20"></div>
           <div class="rectangle-21"></div>
           <div class="rectangle-22"></div>
-          <div class="text-wrapper-6">$3.1</div>
-          <div class="text-wrapper-7">$10.00</div>
-          <div class="text-wrapper-8">$25.0</div>
-          <div class="text-wrapper-9">$7.0</div>
-          <p class="book-an-uber">Book an Uber<br />11:07am - 11:18am</p>
-          <p class="book-a-lyft">Book a Lyft<br />11:19am - 11:32am</p>
-          <img class="rectangle-23" src="img/rectangle-320.png" />
+          <div class="text-wrapper-6" style="display: none;">
+            <button id = "3.1" onclick = "go2pay() ">$3.1</button>
+          </div>
+          <div class="text-wrapper-7" style="display: none;">
+            <button id = "10.00" onclick = "go2pay() ">$10.0</button>
+
+          </div>
+          <div class="text-wrapper-8" style="display: none;">
+            <button id = "25.0" onclick = "go2pay() ">$25.0</button>
+
+          </div>
+          <div class="text-wrapper-9" style="display: none;">
+            <button id = "7.0" onclick = "go2pay() ">$7.0</button>
+
+          </div>
+          <p class="book-an-uber" style="display: none;">Book an Uber<br />11:07am - 11:18am</p>
+          <p class="book-a-lyft" style="display: none;">Book a Lyft<br />11:19am - 11:32am</p>
+          <div>
+            <a href="#" onclick="go2overlay()">
+                <img class="rectangle-23" src="img/rectangle-320.png" alt="Clickable Image"/>
+            </a>
+        </div>
         </div>
       </div>
     </div>

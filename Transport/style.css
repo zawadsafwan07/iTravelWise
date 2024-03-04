@@ -1,3 +1,28 @@
+.rectangle,
+
+
+
+.rectangle-7,
+.rectangle-8,
+.rectangle-9,
+.rectangle-10,
+.rectangle-11,
+.rectangle-12,
+.rectangle-13,
+.rectangle-14,
+.rectangle-15,
+.rectangle-16,
+.rectangle-17,
+.rectangle-18,
+.rectangle-19,
+.rectangle-20,
+.rectangle-21,
+.rectangle-22
+ {
+  display: none;
+}
+
+
 .transportation {
   background-color: #0d1507;
   display: flex;
@@ -54,24 +79,31 @@
 
 .transportation .boxes {
   display: flex;
-  width: 124px;
+  width: 150px; /* Adjust the width as needed */
   height: 35px;
   align-items: center;
   gap: 10px;
-  padding: 6px 10px;
+  padding: 6px 10px; /* Adjust the padding as needed */
   top: 176px;
   left: 25px;
   border: 1px solid;
   position: absolute;
   background-color: #ffffff;
   border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.transportation .choose-date {
+  width: 100%;
+  height: 100%; /* Ensure the input takes up the full height of the container */
+  border: none; /* Remove default input border */
 }
 
 .transportation .vector {
-  position: relative;
   width: 18px;
   height: 20px;
 }
+
 
 .transportation .text-wrapper {
   position: relative;
@@ -90,19 +122,30 @@
 
 .transportation .div {
   display: flex;
-  width: 51px;
+  width: 80px; /* Adjust the width as needed */
   height: 35px;
   align-items: center;
-  justify-content: center;
   gap: 10px;
   padding: 6px 10px;
-  top: 176px;
-  left: 175px;
+  top: 165px;
+  left: 14px;
   border: 1px solid;
   position: absolute;
   background-color: #ffffff;
   border-radius: 5px;
 }
+
+.transportation .number-dropdown {
+  width: 100%; /* Make the dropdown take up the full width of the container */
+  height: 100%; /* Ensure the dropdown takes up the full height of the container */
+  border: none; /* Remove default dropdown border */
+}
+
+.transportation .group {
+  width: 18px;
+  height: 20px;
+}
+
 
 .transportation .group {
   position: relative;
@@ -222,16 +265,29 @@
 
 .transportation .text-wrapper-4 {
   position: absolute;
-  width: 95px;
-  height: 32px;
   top: 75px;
   left: 25px;
-  font-family: "Jaldi", Helvetica;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.transportation .text-wrapper-4 label {
+  display: none; /* Hide the label */
+}
+
+.transportation .currentlocation {
+  width: 100%;
+  height: 25px;
+  background-color: transparent;
+  font-family: "Acme", Helvetica;
   font-weight: 400;
   color: #000000;
-  font-size: 14px;
-  letter-spacing: -0.41px;
-  line-height: 22px;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  border: 0;
+  padding: 0;
 }
 
 .transportation .text-wrapper-5 {
@@ -248,6 +304,11 @@
   line-height: 22px;
   white-space: nowrap;
 }
+
+.transportation .text-wrapper-5 label {
+  display: none; /* Hide the label */
+}
+
 
 .transportation .rectangle-7 {
   position: absolute;
@@ -390,7 +451,7 @@
   line-height: normal;
 }
 
-.transportation .rectangle-19 {
+/* .transportation .rectangle-19 {
   position: absolute;
   width: 44px;
   height: 32px;
@@ -421,9 +482,9 @@
   background-color: #9efa65;
   border-radius: 12px;
   mix-blend-mode: darken;
-}
+} */
 
-.transportation .rectangle-22 {
+/* .transportation .rectangle-22 {
   position: absolute;
   width: 44px;
   height: 32px;
@@ -432,7 +493,7 @@
   background-color: #9efa65;
   border-radius: 12px;
   mix-blend-mode: darken;
-}
+} */
 
 .transportation .text-wrapper-6 {
   top: 237px;
@@ -525,3 +586,5 @@
   mix-blend-mode: darken;
   object-fit: cover;
 }
+
+
