@@ -1,33 +1,66 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="log-in-screen">
-      <div class="overlap-group-wrapper">
-        <div class="overlap-group">
-          <img class="app-logo" src="img/app-logo-1.png" />
-          <input class="overlap" />
-          <div class="div"><img class="rectangle" src="img/rectangle-2.svg" /> <input class="password" /></div>
-          <div class="overlap-2">
-            <div class="text-wrapper">Log in</div>
-            <div class="text-wrapper-2">Forgot Password</div>
-            <div class="rectangle-2"></div>
-            <div class="rectangle-3"></div>
-          </div>
-          <div class="overlap-3">
-            <div class="rectangle-4"></div>
-            <div class="text-wrapper-3">Continue with</div>
-            <img class="img" src="img/rectangle-298.png" />
-          </div>
-          <div class="overlap-4">
-            <button class="text-wrapper-4">Create Account</button>
-            <img class="rectangle-5" src="img/rectangle-244.svg" />
-          </div>
-        </div>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="globals.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+
+    function redirectToForgot() {
+     
+      window.open('../Forgot_Password/index.html', 'SecondPage', 'width=300,height=230,top=200,left=450');
+    
+    }
+
+    function redirectToCreateAccount() {
+      window.location.href = '../Create_Account/index.html';
+    }
+
+    function redirectToPortal() {
+      window.location.href = '../Portal/index.html';
+    }
+
+    function validate(){
+      if(   document.getElementById("text1").value == "john"
+        && document.getElementById("text2").value == "j1234" )
+      {
+        redirectToPortal();
+      }
+      else
+      {
+        alert( "incorrect username or password" );
+      }
+}
+
+    
+  </script>
+</head>
+<body>
+  <div class="log-in-screen ">
+    <div class="div">
+      <img class="backdrop" src="img/rectangle-302.jpg" />
+      <div id="overlay"></div>
+      <img class="app-logo" src="img/app-logo-1.png" />
+      <img class="img" src="img/rectangle-1.png" />
+      <img class="rectangle-2" src="img/rectangle-2.svg" />
+      <div class="input-wrapper">
+      <input class="username" type="text" id="text1" placeholder="Username" />
       </div>
+      <div class="input-wrapper">
+        <input class="password" type="password" id="text2" placeholder="Password" />
+      </div>
+      <div class="text-wrapper"> <button id="loginButton" class="log_in_button" onclick="validate()">Log in</button></div>
+      <div class="text-wrapper-2">
+        <a href="#" onclick="redirectToPortal()()">
+        <button id="continueButton" class="continue_button" onclick="redirectToPortal()">
+          Continue with Google
+        </button>
+      </a>
+      </div>
+      <div class="text-wrapper-3"> <button id="forgotButton" class="forgot_pass_button" onclick="redirectToForgot()">Forgot Password</button></div>
+      <div class="text-wrapper-4"> <button id="createAccountButton" class="create_button" onclick="redirectToCreateAccount()">Create Account</button></div>
     </div>
-  </body>
+  
+  </div>
+
+</body>
 </html>
